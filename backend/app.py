@@ -141,6 +141,7 @@ def newest():
     df = df_metadata.sort_values(by='published', ascending=False)
     df = df.head(10).copy()
     df['start_time'] = 0
+    df['similarity'] = 0
     print(df.published)
     df['image'] = df.podcast_name.apply(lambda x: get_tmp_image(x))
     return jsonify(df.to_dict(orient='records'))
