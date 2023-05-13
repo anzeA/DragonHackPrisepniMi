@@ -26,7 +26,17 @@ BASEDIR = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__
 def get_db_metadata():
     csv_file = os.path.join(BASEDIR, 'data', 'podcasts_meta.csv')
     cols = {"title_pretty":str,'episode_title': str, 'podcast_name': str, 'link_homepage': str, 'link_mp3': str, 'description': str, 'published':str}
-    return pd.read_csv(csv_file,index_col=False,dtype=cols).dropna()
+    df = pd.read_csv(csv_file,index_col=False,dtype=cols).dropna()
+    # cast published to datetime
+    df['published'] = pd.to_datetime(df['published'])
+    ad_episode_titles = ["002: Mravlja-mož in osa, njam njam",
+                         "#10 — Razvoj umetne inteligence in načini strojnega učenja (dr. Boris Cergol)",
+                         "#67 — Astrofizika, inteligenca, zavest in izzivi človeštva (Tomaž Zwitter)",
+                         "#58 — Ljubezen, vera in samozdravljenje (Mojca Fatur)",
+                         "#14 — AutoGPT, digitalni agenti, ChatGPT plugini in prihodnost dela — RE:moat"]
+
+    df["ad"] = df['episode_title_pretty'].apply(lambda x: 1 if x in ad_episode_titles else 0)
+    return df
 @lru_cache()
 def get_db_transcribe():
     csv_file = os.path.join(BASEDIR, 'data', 'all_transcriptions.csv')
@@ -34,9 +44,10 @@ def get_db_transcribe():
     cols.update({f'embedding_{i}':np.float32 for i in range(384)})
     #print('read only 2000 rows')
     df = pd.read_csv(csv_file,index_col=False,dtype=cols)#,nrows=2000
+    df = df.dropna()
     df["embedding"] = df.apply(lambda s: np.array([s[f"emb_{i}"] for i in range(384)]), axis=1)
     df = df.drop(columns=[f"emb_{i}" for i in range(384)])
-    df = df.dropna()
+
     return df
 
 
@@ -47,13 +58,7 @@ def index():
 df_transcribe = get_db_transcribe()
 df_metadata = get_db_metadata()
 
-ad_episode_titles = ["002: Mravlja-mož in osa, njam njam",
-                     "#10 — Razvoj umetne inteligence in načini strojnega učenja (dr. Boris Cergol)",
-                     "#67 — Astrofizika, inteligenca, zavest in izzivi človeštva (Tomaž Zwitter)",
-                     "#58 — Ljubezen, vera in samozdravljenje (Mojca Fatur)",
-                     "#14 — AutoGPT, digitalni agenti, ChatGPT plugini in prihodnost dela — RE:moat"]
 
-df_metadata["ad"] = df_metadata['episode_title_pretty'].apply(lambda x: 1 if x in ad_episode_titles else 0)
 logging.info('Load embedding_model')
 embedding_model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2', device='cpu')
 
@@ -118,14 +123,27 @@ def rank():
         #display(df_time2)
         df_res = df_res.merge(df_time2[['episode_title','start_time']], how='left', on='episode_title')
         df_res.drop(columns=['index'], inplace=True)
+        print(df_res)
+        print(df_res.ad)
         df_res['image'] = df_res.podcast_name.apply(lambda x: get_tmp_image(x))
-
         out = df_res.to_dict(orient='records')
+
         logging.info(f'Done query {query}')
         return jsonify(out)
     except Exception as e:
         logging.error(f'Error processing query {query}: {e}')
         return jsonify({'result': 'Error'})
+
+@app.route('/api/newest', methods=['GET'])
+@cross_origin()
+def newest():
+    global df_metadata
+    df = df_metadata.sort_values(by='published', ascending=False)
+    df = df.head(10).copy()
+    df['start_time'] = 0
+    print(df.published)
+    df['image'] = df.podcast_name.apply(lambda x: get_tmp_image(x))
+    return jsonify(df.to_dict(orient='records'))
 
 if __name__ == '__main__':
     app.run(port=3001, debug=True)
