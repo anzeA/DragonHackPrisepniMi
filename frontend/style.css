@@ -8,9 +8,14 @@ body {
 
 .titleDiv {
   background-color: #bdbdbd;
+  font-size: 20px;
 }
 .topRow {
   width: 80%;
+}
+
+.ad-background {
+  background-color: #ecf7a4;
 }
 
 
@@ -64,7 +69,7 @@ input[type="text"] {
 button[type="submit"] {
   font-size: 18px;
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #7797ff;
   color: #fff;
   border-radius: 0 5px 5px 0;
   border: none;
@@ -81,7 +86,7 @@ button[type="submit"]:hover {
   display: inline-block;
   font-size: 18px;
   padding: 10px 15px;
-  background-color: #007bff;
+  background-color: #7797ff;
   color: #fff;
   border-radius: 5px 5px 5px 5px;
   border: none;
@@ -162,7 +167,7 @@ button[type="submit"]:hover {
 .audioListened {
   width: 0%;
   height: 100%;
-  background-color: #007bff;
+  background-color: #7797ff;
   float: left;
 }
 

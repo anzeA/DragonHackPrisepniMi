@@ -1,3 +1,30 @@
+const startPage = () => {
+  console.log('Start Page');
+  fetch('http://localhost:3001/api/newest', {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log('Search results received');
+    const resultsContainer = document.getElementById('search-results');
+    resultsContainer.innerHTML = '';
+    data.forEach(result => {
+      console.log(result)
+      const resultDiv = createResultElement(result);
+      resultsContainer.appendChild(resultDiv);
+    });
+  })
+  .catch(error => console.error(error));
+}
+
+window.addEventListener("load", () => {
+  console.log("tukaj")
+  startPage()
+})
+
 const search = () => {
   console.log('Search button clicked');
   const query = document.getElementById('search-input').value;
@@ -23,9 +50,10 @@ const search = () => {
 };
 
 
-const createResultElement = ({ podcast,episode_title_pretty, description, link_homepage, link_mp3, similarity, image,ad, mp}) => {
+const createResultElement = ({ podcast,episode_title_pretty, description, link_homepage, link_mp3, similarity, image,ad, mp, start_time}) => {
 
-  const magic_time = 100
+  const magic_time = start_time / 1000
+  const isAdd = (ad == 1)
 
   const resultDiv = document.createElement('div');
   resultDiv.classList.add('result');
@@ -59,9 +87,9 @@ const createResultElement = ({ podcast,episode_title_pretty, description, link_h
   const podcastHeading = document.createElement('h3');
   podcastHeading.textContent = podcast;
 
-  if (ad === 1) {
-    console.log('Adding ad-background class');
-    resultDiv.classList.add('ad-background');
+  console.log(isAdd)
+  if (isAdd) {
+    textDiv.classList.add('ad-background');
   }
 
 
@@ -70,6 +98,7 @@ const createResultElement = ({ podcast,episode_title_pretty, description, link_h
 
   const urlAnchor = document.createElement('a');
   urlAnchor.classList.add("col-sm-1")
+  urlAnchor.classList.add("titleDiv")
   const homepageIcon = document.createElement('i')
   homepageIcon.classList.add("bi")
   homepageIcon.classList.add("bi-house-fill")
@@ -80,6 +109,7 @@ const createResultElement = ({ podcast,episode_title_pretty, description, link_h
   const favoriteButton = document.createElement("button")
   favoriteButton.classList.add("btn")
   favoriteButton.classList.add("col-sm-1")
+  favoriteButton.classList.add("titleDiv")
   
   var starIcon = document.createElement("i")
   starIcon.classList.add("bi")
@@ -96,14 +126,7 @@ const createResultElement = ({ podcast,episode_title_pretty, description, link_h
   const similarityParagraph = document.createElement('p');
   similarityParagraph.textContent = `Similarity score: ${similarity.toFixed(2)}`;
 
-  
 
-  if (ad === 1) {
-    console.log('Adding ad-background class');
-    resultDiv.classList.add('ad-background');
-    const titleHeading = document.createElement('h2');
-    titleHeading.textContent = `test`;
-  }
   
   var audioElement = new Audio(link_mp3);
 
@@ -303,3 +326,4 @@ searchInput.addEventListener('keydown', event => {
     search();
   }
 });
+
