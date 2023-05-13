@@ -78,6 +78,7 @@ logging.info('Load data. It might take a while...')
 df_transcribe = get_db_transcribe()
 df_transcribe_dim_cols = get_db_transcribe_no_vector()
 df_metadata = get_db_metadata()
+print(df_metadata.podcast_name.unique())
 
 logging.info('Load embedding_model')
 embedding_model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2', device='cpu')
