@@ -141,13 +141,34 @@ def get_newest():
     df['start_time'] = 0
     df['similarity'] = 0
     df['image'] = df.podcast_name.apply(lambda x: get_tmp_image(x))
-    return jsonify(df.to_dict(orient='records'))
+    return df.to_dict(orient='records')
 
 newest = get_newest()
 @app.route('/api/newest', methods=['GET'])
 @cross_origin()
 def newest():
-    return newest
+    return jsonify(newest)
+
+@app.route('/api/similar_episodes', methods=['GET'])
+@cross_origin()
+def similar_episodes():
+    episode_title = request.json.get('episode_title', '')
+    global df_metadata
+    df_pod = df_transcribe.groupby("episode_title").agg({f"emb_{i}": "median" for i in range(384)}).reset_index()
+    df_pod["embedding"] = df_pod.apply(lambda s: np.array([s[f"emb_{i}"] for i in range(384)]), axis=1)
+
+    embedding = df_pod[df_pod.episode_title==episode_title][[f"emb_{i}" for i in range(384)]].values.squeeze()
+    df_res = get_similar_news(embedding, df_pod, embedding_col="embedding")
+
+    df_res = df_res[["episode_title", "similarity"]].merge(df_metadata, how='left', on='episode_title').sort_values(by=["similarity"], ascending=False)
+
+    out = df_res[1:11].copy()
+    out['image'] = out.podcast_name.apply(lambda x: get_tmp_image(x))
+    out['ad'] = 0
+
+    out = out.to_dict(orient='records')
+    return out
+
 
 if __name__ == '__main__':
     app.run(port=3001, debug=True)

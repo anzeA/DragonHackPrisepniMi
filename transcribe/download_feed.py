@@ -266,6 +266,7 @@ def download(feed_urls):
 
 if __name__ == '__main__':
     feed_urls = [
+        'https://feeds.blubrry.com/feeds/moneyhow.xml',
         'http://podcast.rtvslo.si/zoga_je_okrogla.xml',
         'https://anchor.fm/s/964a7d24/podcast/rss', # ogroje
         'https://anchor.fm/s/1c9278b0/podcast/rss',
