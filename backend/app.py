@@ -202,7 +202,8 @@ def newest():
 
 @app.route('/api/similar_episodes', methods=['GET'])
 @cross_origin()
-def similar_episodes(episode_title):
+def similar_episodes():
+    episode_title = request.json.get('episode_title', '')
     df_transcribe =  df_transcribe_dim_cols
     global df_metadata
     df_pod = df_transcribe.groupby("episode_title").agg({f"emb_{i}": "median" for i in range(384)}).reset_index()
