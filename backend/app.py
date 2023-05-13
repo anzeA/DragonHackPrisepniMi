@@ -123,8 +123,8 @@ def rank():
         #display(df_time2)
         df_res = df_res.merge(df_time2[['episode_title','start_time']], how='left', on='episode_title')
         df_res.drop(columns=['index'], inplace=True)
-        print(df_res)
-        print(df_res.ad)
+        #print(df_res)
+        #print(df_res.ad)
         df_res['image'] = df_res.podcast_name.apply(lambda x: get_tmp_image(x))
         out = df_res.to_dict(orient='records')
 
@@ -142,7 +142,6 @@ def newest():
     df = df.head(10).copy()
     df['start_time'] = 0
     df['similarity'] = 0
-    print(df.published)
     df['image'] = df.podcast_name.apply(lambda x: get_tmp_image(x))
     return jsonify(df.to_dict(orient='records'))
 
