@@ -215,6 +215,8 @@ def similar_episodes():
     df_res = df_res[["episode_title", "similarity"]].merge(df_metadata, how='left', on='episode_title').sort_values(by=["similarity"], ascending=False)
 
     out = df_res[1:11].copy()
+    out.drop(columns=['embedding'], inplace=True)
+    print(out.columns)
     out['image'] = out.podcast_name.apply(lambda x: get_tmp_image(x))
     out['ad'] = 0
     return jsonify(out.to_dict(orient='records'))
