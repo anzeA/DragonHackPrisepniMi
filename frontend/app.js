@@ -20,6 +20,31 @@ const startPage = () => {
   .catch(error => console.error(error));
 }
 
+const similarEpisodes = (title) => {
+  console.log('Start Page');
+  fetch('http://localhost:3001/api/similar_episodes?' + new URLSearchParams({
+    episode_title: title
+  }),
+  {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log('Search results received');
+    const resultsContainer = document.getElementById('search-results');
+    resultsContainer.innerHTML = '';
+    data.forEach(result => {
+      console.log(result)
+      const resultDiv = createResultElement(result);
+      resultsContainer.appendChild(resultDiv);
+    });
+  })
+  .catch(error => console.error(error));
+}
+
 window.addEventListener("load", () => {
   console.log("tukaj")
   startPage()
@@ -50,7 +75,7 @@ const search = () => {
 };
 
 
-const createResultElement = ({ podcast,episode_title_pretty, description, link_homepage, link_mp3, similarity, image,ad, mp, start_time}) => {
+const createResultElement = ({ podcast,episode_title_pretty, episode_title, description, link_homepage, link_mp3, similarity, image,ad, mp, start_time, published}) => {
 
   const magic_time = start_time / 1000
   const isAdd = (ad == 1)
@@ -118,8 +143,8 @@ const createResultElement = ({ podcast,episode_title_pretty, description, link_h
   favoriteButton.appendChild(starIcon)
 
   favoriteButton.addEventListener("click", () => {
-    starIcon.classList.toggle("bi-star")
-    starIcon.classList.toggle("bi-star-fill")
+    console.log(episode_title)
+    similarEpisodes(episode_title)
   })
 
 
