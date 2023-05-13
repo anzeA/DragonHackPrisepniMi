@@ -1,0 +1,1028 @@
+2023-05-13 12:45:58,123 [INFO] Test log
+2023-05-13 12:45:58,123 [INFO] Load csv. Takes some time
+2023-05-13 12:46:32,143 [INFO] Load embedding_model
+2023-05-13 12:46:32,143 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 12:46:33,747 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2023-05-13 12:46:33,747 [INFO] [33mPress CTRL+C to quit[0m
+2023-05-13 12:46:33,757 [INFO]  * Restarting with stat
+2023-05-13 12:46:37,360 [INFO] Test log
+2023-05-13 12:46:37,360 [INFO] Load csv. Takes some time
+2023-05-13 12:47:10,963 [INFO] Load embedding_model
+2023-05-13 12:47:10,976 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 12:47:12,456 [WARNING]  * Debugger is active!
+2023-05-13 12:47:12,456 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 12:56:38,570 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\transcribe\\download_feed.py', reloading
+2023-05-13 12:56:39,257 [INFO]  * Restarting with stat
+2023-05-13 12:56:43,248 [INFO] Test log
+2023-05-13 12:56:43,248 [INFO] Load csv. Takes some time
+2023-05-13 13:12:46,043 [INFO] Test log
+2023-05-13 13:12:46,044 [INFO] Load csv. Takes some time
+2023-05-13 13:13:20,057 [INFO] Load embedding_model
+2023-05-13 13:13:20,057 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 13:13:21,567 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2023-05-13 13:13:21,567 [INFO] [33mPress CTRL+C to quit[0m
+2023-05-13 13:13:21,571 [INFO]  * Restarting with stat
+2023-05-13 13:13:25,221 [INFO] Test log
+2023-05-13 13:13:25,221 [INFO] Load csv. Takes some time
+2023-05-13 13:13:59,359 [INFO] Load embedding_model
+2023-05-13 13:13:59,359 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 13:14:00,864 [WARNING]  * Debugger is active!
+2023-05-13 13:14:00,864 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 13:14:00,882 [INFO] 127.0.0.1 - - [13/May/2023 13:14:00] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 13:14:00,882 [INFO] 127.0.0.1 - - [13/May/2023 13:14:00] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 13:14:01,199 [INFO] Got request
+2023-05-13 13:14:01,199 [INFO] Query is: asdf
+2023-05-13 13:14:01,199 [INFO] Got request
+2023-05-13 13:14:01,199 [INFO] Query is: asdf
+2023-05-13 13:14:02,623 [ERROR] Error processing query asdf: [Errno 2] No such file or directory: 'logo.png'
+2023-05-13 13:14:02,624 [INFO] 127.0.0.1 - - [13/May/2023 13:14:02] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 13:14:02,652 [ERROR] Error processing query asdf: [Errno 2] No such file or directory: 'logo.png'
+2023-05-13 13:14:02,652 [INFO] 127.0.0.1 - - [13/May/2023 13:14:02] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 13:14:03,968 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 13:14:04,585 [INFO]  * Restarting with stat
+2023-05-13 13:14:08,239 [INFO] Test log
+2023-05-13 13:14:08,239 [INFO] Load csv. Takes some time
+2023-05-13 13:14:09,173 [INFO] Load embedding_model
+2023-05-13 13:14:09,173 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 13:14:10,759 [WARNING]  * Debugger is active!
+2023-05-13 13:14:10,759 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 13:15:01,904 [INFO] Test log
+2023-05-13 13:15:01,904 [INFO] Load csv. Takes some time
+2023-05-13 13:15:02,824 [INFO] Load embedding_model
+2023-05-13 13:15:02,824 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 13:15:04,312 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2023-05-13 13:15:04,314 [INFO] [33mPress CTRL+C to quit[0m
+2023-05-13 13:15:04,314 [INFO]  * Restarting with stat
+2023-05-13 13:15:07,872 [INFO] Test log
+2023-05-13 13:15:07,872 [INFO] Load csv. Takes some time
+2023-05-13 13:15:08,819 [INFO] Load embedding_model
+2023-05-13 13:15:08,819 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 13:15:10,329 [WARNING]  * Debugger is active!
+2023-05-13 13:15:10,329 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 13:15:32,650 [INFO] Test log
+2023-05-13 13:15:32,650 [INFO] Load csv. Takes some time
+2023-05-13 13:15:33,585 [INFO] Load embedding_model
+2023-05-13 13:15:33,585 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 13:15:35,075 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2023-05-13 13:15:35,075 [INFO] [33mPress CTRL+C to quit[0m
+2023-05-13 13:15:35,087 [INFO]  * Restarting with stat
+2023-05-13 13:15:38,672 [INFO] Test log
+2023-05-13 13:15:38,672 [INFO] Load csv. Takes some time
+2023-05-13 13:15:39,615 [INFO] Load embedding_model
+2023-05-13 13:15:39,615 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 13:15:41,110 [WARNING]  * Debugger is active!
+2023-05-13 13:15:41,112 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 13:16:51,966 [INFO] 127.0.0.1 - - [13/May/2023 13:16:51] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 13:16:52,223 [INFO] Got request
+2023-05-13 13:16:52,223 [INFO] Query is: asdf
+2023-05-13 13:16:52,253 [ERROR] Error processing query asdf: [Errno 2] No such file or directory: 'logo.png'
+2023-05-13 13:16:52,253 [INFO] 127.0.0.1 - - [13/May/2023 13:16:52] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 13:19:01,030 [INFO] Test log
+2023-05-13 13:19:01,037 [INFO] Load csv. Takes some time
+2023-05-13 13:19:01,960 [INFO] Load embedding_model
+2023-05-13 13:19:01,960 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 13:19:03,468 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2023-05-13 13:19:03,468 [INFO] [33mPress CTRL+C to quit[0m
+2023-05-13 13:19:03,472 [INFO]  * Restarting with stat
+2023-05-13 13:19:07,027 [INFO] Test log
+2023-05-13 13:19:07,027 [INFO] Load csv. Takes some time
+2023-05-13 13:19:07,947 [INFO] Load embedding_model
+2023-05-13 13:19:07,947 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 13:19:09,441 [WARNING]  * Debugger is active!
+2023-05-13 13:19:09,441 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 13:19:32,851 [INFO] 127.0.0.1 - - [13/May/2023 13:19:32] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 13:19:33,105 [INFO] Got request
+2023-05-13 13:19:33,105 [INFO] Query is: asdf
+2023-05-13 13:19:33,150 [ERROR] Error processing query asdf: [Errno 2] No such file or directory: 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\data\\image\\logo.png'
+2023-05-13 13:19:33,150 [INFO] 127.0.0.1 - - [13/May/2023 13:19:33] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 13:20:24,155 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 13:20:24,786 [INFO]  * Restarting with stat
+2023-05-13 13:20:28,359 [INFO] Test log
+2023-05-13 13:20:28,370 [INFO] Load csv. Takes some time
+2023-05-13 13:20:29,292 [INFO] Load embedding_model
+2023-05-13 13:20:29,292 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 13:20:30,796 [WARNING]  * Debugger is active!
+2023-05-13 13:20:30,799 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 13:20:34,603 [INFO] 127.0.0.1 - - [13/May/2023 13:20:34] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 13:20:34,862 [INFO] Got request
+2023-05-13 13:20:34,862 [INFO] Query is: asdf
+2023-05-13 13:20:34,970 [INFO] 127.0.0.1 - - [13/May/2023 13:20:34] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 13:23:21,361 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 13:23:22,021 [INFO]  * Restarting with stat
+2023-05-13 13:23:25,629 [INFO] Test log
+2023-05-13 13:23:25,632 [INFO] Load csv. Takes some time
+2023-05-13 13:23:26,590 [INFO] Load embedding_model
+2023-05-13 13:23:26,590 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 13:23:28,097 [WARNING]  * Debugger is active!
+2023-05-13 13:23:28,100 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 13:24:20,612 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\transcribe\\download_feed.py', reloading
+2023-05-13 13:24:21,308 [INFO]  * Restarting with stat
+2023-05-13 13:24:24,915 [INFO] Test log
+2023-05-13 13:24:24,915 [INFO] Load csv. Takes some time
+2023-05-13 13:24:25,884 [INFO] Load embedding_model
+2023-05-13 13:24:25,884 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 13:24:27,406 [WARNING]  * Debugger is active!
+2023-05-13 13:24:27,407 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 13:25:37,083 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\transcribe\\download_feed.py', reloading
+2023-05-13 13:25:37,686 [INFO]  * Restarting with stat
+2023-05-13 13:25:41,573 [INFO] Test log
+2023-05-13 13:25:41,573 [INFO] Load csv. Takes some time
+2023-05-13 13:25:42,520 [INFO] Load embedding_model
+2023-05-13 13:25:42,520 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 13:25:44,101 [WARNING]  * Debugger is active!
+2023-05-13 13:25:44,104 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 13:27:51,824 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\transcribe\\download_feed.py', reloading
+2023-05-13 13:27:52,421 [INFO]  * Restarting with stat
+2023-05-13 13:27:56,126 [INFO] Test log
+2023-05-13 13:27:56,126 [INFO] Load csv. Takes some time
+2023-05-13 13:27:57,173 [INFO] Load embedding_model
+2023-05-13 13:27:57,173 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 13:27:58,868 [WARNING]  * Debugger is active!
+2023-05-13 13:27:58,868 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 13:28:00,905 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\transcribe\\download_feed.py', reloading
+2023-05-13 13:28:01,627 [INFO]  * Restarting with stat
+2023-05-13 13:28:05,358 [INFO] Test log
+2023-05-13 13:28:05,358 [INFO] Load csv. Takes some time
+2023-05-13 13:28:06,350 [INFO] Load embedding_model
+2023-05-13 13:28:06,350 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 13:28:07,993 [WARNING]  * Debugger is active!
+2023-05-13 13:28:07,995 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 13:29:42,117 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\transcribe\\download_feed.py', reloading
+2023-05-13 13:29:42,732 [INFO]  * Restarting with stat
+2023-05-13 13:29:47,852 [INFO] Test log
+2023-05-13 13:29:47,852 [INFO] Load csv. Takes some time
+2023-05-13 13:29:48,957 [INFO] Load embedding_model
+2023-05-13 13:29:48,957 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 13:29:50,769 [WARNING]  * Debugger is active!
+2023-05-13 13:29:50,769 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 13:29:59,872 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\transcribe\\download_feed.py', reloading
+2023-05-13 13:30:00,586 [INFO]  * Restarting with stat
+2023-05-13 13:30:04,504 [INFO] Test log
+2023-05-13 13:30:04,504 [INFO] Load csv. Takes some time
+2023-05-13 13:30:05,462 [INFO] Load embedding_model
+2023-05-13 13:30:05,462 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 13:30:07,087 [WARNING]  * Debugger is active!
+2023-05-13 13:30:07,098 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 13:30:35,474 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\transcribe\\download_feed.py', reloading
+2023-05-13 13:30:36,218 [INFO]  * Restarting with stat
+2023-05-13 13:30:40,005 [INFO] Test log
+2023-05-13 13:30:40,005 [INFO] Load csv. Takes some time
+2023-05-13 13:30:41,045 [INFO] Load embedding_model
+2023-05-13 13:30:41,045 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 13:30:42,656 [WARNING]  * Debugger is active!
+2023-05-13 13:30:42,657 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 13:30:52,799 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\transcribe\\download_feed.py', reloading
+2023-05-13 13:30:53,458 [INFO]  * Restarting with stat
+2023-05-13 14:54:51,028 [INFO] Test log
+2023-05-13 14:54:51,030 [INFO] Load csv. Takes some time
+2023-05-13 14:54:52,113 [INFO] Load embedding_model
+2023-05-13 14:54:52,114 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 14:54:54,074 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2023-05-13 14:54:54,074 [INFO] [33mPress CTRL+C to quit[0m
+2023-05-13 14:54:54,076 [INFO]  * Restarting with stat
+2023-05-13 14:54:58,764 [INFO] Test log
+2023-05-13 14:54:58,766 [INFO] Load csv. Takes some time
+2023-05-13 14:54:59,887 [INFO] Load embedding_model
+2023-05-13 14:54:59,887 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 14:55:02,871 [WARNING]  * Debugger is active!
+2023-05-13 14:55:02,877 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 14:55:13,399 [INFO] 127.0.0.1 - - [13/May/2023 14:55:13] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 14:55:13,645 [INFO] Got request
+2023-05-13 14:55:13,645 [INFO] Query is: zdravje
+2023-05-13 14:55:13,752 [ERROR] Error processing query zdravje: get_tmp_image() missing 1 required positional argument: 'title'
+2023-05-13 14:55:13,752 [INFO] 127.0.0.1 - - [13/May/2023 14:55:13] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 14:55:14,430 [INFO] 127.0.0.1 - - [13/May/2023 14:55:14] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 14:55:14,741 [INFO] Got request
+2023-05-13 14:55:14,741 [INFO] Query is: zdravje
+2023-05-13 14:55:14,787 [ERROR] Error processing query zdravje: get_tmp_image() missing 1 required positional argument: 'title'
+2023-05-13 14:55:14,788 [INFO] 127.0.0.1 - - [13/May/2023 14:55:14] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 14:55:56,783 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 14:55:57,982 [INFO]  * Restarting with stat
+2023-05-13 14:56:02,692 [INFO] Test log
+2023-05-13 14:56:02,695 [INFO] Load csv. Takes some time
+2023-05-13 14:56:03,740 [INFO] Load embedding_model
+2023-05-13 14:56:03,740 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 14:56:05,605 [WARNING]  * Debugger is active!
+2023-05-13 14:56:05,608 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 14:56:10,041 [INFO] 127.0.0.1 - - [13/May/2023 14:56:10] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 14:56:10,307 [INFO] Got request
+2023-05-13 14:56:10,307 [INFO] Query is: zdravje
+2023-05-13 14:56:10,356 [ERROR] Error processing query zdravje: [Errno 2] No such file or directory: 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\data\\image\\.png'
+2023-05-13 14:56:10,357 [INFO] 127.0.0.1 - - [13/May/2023 14:56:10] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 14:56:27,928 [INFO] 127.0.0.1 - - [13/May/2023 14:56:27] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 14:56:28,235 [INFO] Got request
+2023-05-13 14:56:28,235 [INFO] Query is: asdf
+2023-05-13 14:56:28,280 [ERROR] Error processing query asdf: [Errno 2] No such file or directory: 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\data\\image\\.png'
+2023-05-13 14:56:28,280 [INFO] 127.0.0.1 - - [13/May/2023 14:56:28] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 14:56:44,195 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 14:56:44,984 [INFO]  * Restarting with stat
+2023-05-13 14:56:48,782 [INFO] Test log
+2023-05-13 14:56:48,784 [INFO] Load csv. Takes some time
+2023-05-13 14:56:49,825 [INFO] Load embedding_model
+2023-05-13 14:56:49,826 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 14:56:51,421 [WARNING]  * Debugger is active!
+2023-05-13 14:56:51,424 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 14:57:04,902 [INFO] 127.0.0.1 - - [13/May/2023 14:57:04] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 14:57:05,160 [INFO] Got request
+2023-05-13 14:57:05,160 [INFO] Query is: asdf
+2023-05-13 14:57:05,212 [ERROR] Error processing query asdf: [Errno 2] No such file or directory: 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\data\\image\\.png'
+2023-05-13 14:57:05,213 [INFO] 127.0.0.1 - - [13/May/2023 14:57:05] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 14:57:38,301 [INFO] Test log
+2023-05-13 14:57:38,305 [INFO] Load csv. Takes some time
+2023-05-13 14:57:41,995 [INFO] Load embedding_model
+2023-05-13 14:57:41,995 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 14:57:43,852 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2023-05-13 14:57:43,852 [INFO] [33mPress CTRL+C to quit[0m
+2023-05-13 14:57:43,855 [INFO]  * Restarting with stat
+2023-05-13 14:57:50,929 [INFO] Test log
+2023-05-13 14:57:50,933 [INFO] Load csv. Takes some time
+2023-05-13 14:57:54,829 [INFO] Load embedding_model
+2023-05-13 14:57:54,830 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 14:57:56,592 [WARNING]  * Debugger is active!
+2023-05-13 14:57:56,598 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 14:58:13,349 [INFO] 127.0.0.1 - - [13/May/2023 14:58:13] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 14:58:13,606 [INFO] Got request
+2023-05-13 14:58:13,606 [INFO] Query is: zdravje
+2023-05-13 15:02:30,261 [INFO] Test log
+2023-05-13 15:02:30,263 [INFO] Load csv. Takes some time
+2023-05-13 15:02:31,298 [INFO] Load embedding_model
+2023-05-13 15:02:31,298 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 15:02:33,095 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2023-05-13 15:02:33,096 [INFO] [33mPress CTRL+C to quit[0m
+2023-05-13 15:02:33,097 [INFO]  * Restarting with stat
+2023-05-13 15:02:36,982 [INFO] Test log
+2023-05-13 15:02:36,984 [INFO] Load csv. Takes some time
+2023-05-13 15:02:38,057 [INFO] Load embedding_model
+2023-05-13 15:02:38,057 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 15:02:39,885 [WARNING]  * Debugger is active!
+2023-05-13 15:02:39,890 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 15:03:29,716 [INFO] 127.0.0.1 - - [13/May/2023 15:03:29] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 15:03:29,982 [INFO] Got request
+2023-05-13 15:03:29,982 [INFO] Query is: zdravje
+2023-05-13 15:03:30,031 [ERROR] Error processing query zdravje: [Errno 2] No such file or directory: 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\data\\image\\no_img.png'
+2023-05-13 15:03:30,032 [INFO] 127.0.0.1 - - [13/May/2023 15:03:30] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 15:03:50,997 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 15:03:51,631 [INFO]  * Restarting with stat
+2023-05-13 15:03:55,533 [INFO] Test log
+2023-05-13 15:03:55,534 [INFO] Load csv. Takes some time
+2023-05-13 15:03:56,547 [INFO] Load embedding_model
+2023-05-13 15:03:56,548 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 15:03:58,097 [WARNING]  * Debugger is active!
+2023-05-13 15:03:58,100 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 15:04:02,624 [INFO] 127.0.0.1 - - [13/May/2023 15:04:02] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 15:04:02,886 [INFO] Got request
+2023-05-13 15:04:02,887 [INFO] Query is: asdf
+2023-05-13 15:04:04,859 [INFO] 127.0.0.1 - - [13/May/2023 15:04:04] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 15:04:17,780 [INFO] 127.0.0.1 - - [13/May/2023 15:04:17] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 15:04:18,089 [INFO] Got request
+2023-05-13 15:04:18,089 [INFO] Query is: zdravje
+2023-05-13 15:04:18,165 [INFO] 127.0.0.1 - - [13/May/2023 15:04:18] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 15:06:48,513 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\transcribe\\download_feed.py', reloading
+2023-05-13 15:06:49,095 [INFO]  * Restarting with stat
+2023-05-13 15:06:52,725 [INFO] Test log
+2023-05-13 15:06:52,726 [INFO] Load csv. Takes some time
+2023-05-13 15:06:53,693 [INFO] Load embedding_model
+2023-05-13 15:06:53,694 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 15:06:55,252 [WARNING]  * Debugger is active!
+2023-05-13 15:06:55,255 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 16:19:17,001 [INFO] Test log
+2023-05-13 16:19:17,004 [INFO] Load csv. Takes some time
+2023-05-13 16:19:43,680 [INFO] Test log
+2023-05-13 16:19:43,684 [INFO] Load csv. Takes some time
+2023-05-13 16:22:30,256 [INFO] Test log
+2023-05-13 16:22:30,258 [INFO] Load csv. Takes some time
+2023-05-13 16:22:37,371 [INFO] Load embedding_model
+2023-05-13 16:22:37,371 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:22:38,920 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2023-05-13 16:22:38,920 [INFO] [33mPress CTRL+C to quit[0m
+2023-05-13 16:22:38,922 [INFO]  * Restarting with stat
+2023-05-13 16:22:42,552 [INFO] Test log
+2023-05-13 16:22:42,554 [INFO] Load csv. Takes some time
+2023-05-13 16:22:50,090 [INFO] Load embedding_model
+2023-05-13 16:22:50,090 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:22:51,809 [WARNING]  * Debugger is active!
+2023-05-13 16:22:51,813 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 16:23:03,679 [INFO] 127.0.0.1 - - [13/May/2023 16:23:03] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 16:23:03,930 [INFO] Got request
+2023-05-13 16:23:03,930 [INFO] Query is: asdf
+2023-05-13 16:23:04,145 [ERROR] Error processing query asdf: "['podcast', 'title'] not in index"
+2023-05-13 16:23:04,146 [INFO] 127.0.0.1 - - [13/May/2023 16:23:04] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 16:23:47,281 [INFO] Test log
+2023-05-13 16:23:47,285 [INFO] Load csv. Takes some time
+2023-05-13 16:23:51,815 [INFO] Load embedding_model
+2023-05-13 16:23:51,815 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:23:53,730 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2023-05-13 16:23:53,730 [INFO] [33mPress CTRL+C to quit[0m
+2023-05-13 16:23:53,734 [INFO]  * Restarting with stat
+2023-05-13 16:24:00,553 [INFO] Test log
+2023-05-13 16:24:00,557 [INFO] Load csv. Takes some time
+2023-05-13 16:24:29,324 [INFO] Load embedding_model
+2023-05-13 16:24:29,324 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:24:31,150 [WARNING]  * Debugger is active!
+2023-05-13 16:24:31,157 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 16:24:31,254 [INFO] 127.0.0.1 - - [13/May/2023 16:24:31] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 16:24:31,257 [INFO] Got request
+2023-05-13 16:24:31,258 [INFO] Query is: asdf
+2023-05-13 16:24:31,495 [ERROR] Error processing query asdf: "['podcast', 'title'] not in index"
+2023-05-13 16:24:31,496 [INFO] 127.0.0.1 - - [13/May/2023 16:24:31] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 16:24:46,452 [INFO] 127.0.0.1 - - [13/May/2023 16:24:46] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 16:24:46,718 [INFO] Got request
+2023-05-13 16:24:46,718 [INFO] Query is: asdf
+2023-05-13 16:26:07,090 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 16:26:07,997 [INFO]  * Restarting with stat
+2023-05-13 16:26:14,919 [INFO] Test log
+2023-05-13 16:26:14,923 [INFO] Load csv. Takes some time
+2023-05-13 16:26:26,405 [INFO] Test log
+2023-05-13 16:26:26,409 [INFO] Load csv. Takes some time
+2023-05-13 16:26:56,796 [INFO] Load embedding_model
+2023-05-13 16:26:56,797 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:26:58,482 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2023-05-13 16:26:58,482 [INFO] [33mPress CTRL+C to quit[0m
+2023-05-13 16:26:58,486 [INFO]  * Restarting with stat
+2023-05-13 16:27:04,980 [INFO] Test log
+2023-05-13 16:27:04,984 [INFO] Load csv. Takes some time
+2023-05-13 16:27:35,880 [INFO] Load embedding_model
+2023-05-13 16:27:35,880 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:27:37,688 [WARNING]  * Debugger is active!
+2023-05-13 16:27:37,696 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 16:27:47,450 [INFO] 127.0.0.1 - - [13/May/2023 16:27:47] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 16:27:47,715 [INFO] Got request
+2023-05-13 16:27:47,715 [INFO] Query is: podjetje
+2023-05-13 16:30:27,237 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 16:30:28,140 [INFO]  * Restarting with stat
+2023-05-13 16:30:36,531 [INFO] Test log
+2023-05-13 16:30:36,534 [INFO] Load csv. Takes some time
+2023-05-13 16:31:09,692 [INFO] Load embedding_model
+2023-05-13 16:31:09,692 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:31:11,676 [WARNING]  * Debugger is active!
+2023-05-13 16:31:11,682 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 16:33:08,870 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 16:33:09,599 [INFO]  * Restarting with stat
+2023-05-13 16:33:16,525 [INFO] Test log
+2023-05-13 16:33:16,529 [INFO] Load csv. Takes some time
+2023-05-13 16:33:35,892 [INFO] Test log
+2023-05-13 16:33:35,893 [INFO] Load csv. Takes some time
+2023-05-13 16:33:44,745 [INFO] Load embedding_model
+2023-05-13 16:33:44,745 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:33:46,273 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2023-05-13 16:33:46,273 [INFO] [33mPress CTRL+C to quit[0m
+2023-05-13 16:33:46,275 [INFO]  * Restarting with stat
+2023-05-13 16:33:49,902 [INFO] Test log
+2023-05-13 16:33:49,903 [INFO] Load csv. Takes some time
+2023-05-13 16:33:59,074 [INFO] Load embedding_model
+2023-05-13 16:33:59,075 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:34:00,679 [WARNING]  * Debugger is active!
+2023-05-13 16:34:00,682 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 16:34:24,457 [INFO] 127.0.0.1 - - [13/May/2023 16:34:24] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 16:34:24,716 [INFO] Got request
+2023-05-13 16:34:24,717 [INFO] Query is: asdf
+2023-05-13 16:34:24,840 [ERROR] Error processing query asdf: [Errno 2] No such file or directory: 'logo.png'
+2023-05-13 16:34:24,841 [INFO] 127.0.0.1 - - [13/May/2023 16:34:24] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 16:34:25,420 [INFO] 127.0.0.1 - - [13/May/2023 16:34:25] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 16:34:25,726 [INFO] Got request
+2023-05-13 16:34:25,727 [INFO] Query is: asdf
+2023-05-13 16:34:25,849 [ERROR] Error processing query asdf: [Errno 2] No such file or directory: 'logo.png'
+2023-05-13 16:34:25,850 [INFO] 127.0.0.1 - - [13/May/2023 16:34:25] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 16:35:32,001 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 16:35:32,705 [INFO]  * Restarting with stat
+2023-05-13 16:35:36,726 [INFO] Test log
+2023-05-13 16:35:36,728 [INFO] Load csv. Takes some time
+2023-05-13 16:35:46,504 [INFO] Load embedding_model
+2023-05-13 16:35:46,504 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:35:48,078 [WARNING]  * Debugger is active!
+2023-05-13 16:35:48,082 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 16:36:26,707 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 16:36:27,378 [INFO]  * Restarting with stat
+2023-05-13 16:36:31,227 [INFO] Test log
+2023-05-13 16:36:31,229 [INFO] Load csv. Takes some time
+2023-05-13 16:36:41,864 [INFO] Load embedding_model
+2023-05-13 16:36:41,865 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:36:43,685 [WARNING]  * Debugger is active!
+2023-05-13 16:36:43,692 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 16:37:20,248 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 16:37:20,888 [INFO]  * Restarting with stat
+2023-05-13 16:37:24,696 [INFO] Test log
+2023-05-13 16:37:24,697 [INFO] Load csv. Takes some time
+2023-05-13 16:37:34,708 [INFO] Load embedding_model
+2023-05-13 16:37:34,708 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:37:36,300 [WARNING]  * Debugger is active!
+2023-05-13 16:37:36,303 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 16:37:43,668 [INFO] 127.0.0.1 - - [13/May/2023 16:37:43] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 16:37:43,916 [INFO] Got request
+2023-05-13 16:37:43,916 [INFO] Query is: asdf
+2023-05-13 16:37:44,024 [ERROR] Error processing query asdf: get_tmp_image() missing 1 required positional argument: 'title'
+2023-05-13 16:37:44,026 [INFO] 127.0.0.1 - - [13/May/2023 16:37:44] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 16:37:59,642 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 16:38:00,267 [INFO]  * Restarting with stat
+2023-05-13 16:38:04,090 [INFO] Test log
+2023-05-13 16:38:04,092 [INFO] Load csv. Takes some time
+2023-05-13 16:38:14,378 [INFO] Load embedding_model
+2023-05-13 16:38:14,378 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:38:15,963 [WARNING]  * Debugger is active!
+2023-05-13 16:38:15,966 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 16:38:23,939 [INFO] 127.0.0.1 - - [13/May/2023 16:38:23] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 16:38:24,187 [INFO] Got request
+2023-05-13 16:38:24,188 [INFO] Query is: asdf
+2023-05-13 16:38:24,316 [ERROR] Error processing query asdf: 'float' object is not iterable
+2023-05-13 16:38:24,316 [INFO] 127.0.0.1 - - [13/May/2023 16:38:24] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 16:39:17,885 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 16:39:18,551 [INFO]  * Restarting with stat
+2023-05-13 16:39:22,389 [INFO] Test log
+2023-05-13 16:39:22,391 [INFO] Load csv. Takes some time
+2023-05-13 16:39:32,865 [INFO] Load embedding_model
+2023-05-13 16:39:32,865 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:39:34,432 [WARNING]  * Debugger is active!
+2023-05-13 16:39:34,435 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 16:39:44,948 [INFO] 127.0.0.1 - - [13/May/2023 16:39:44] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 16:39:45,214 [INFO] Got request
+2023-05-13 16:39:45,214 [INFO] Query is: asdf
+2023-05-13 16:39:45,338 [ERROR] Error processing query asdf: 'float' object is not iterable
+2023-05-13 16:39:45,338 [INFO] 127.0.0.1 - - [13/May/2023 16:39:45] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 16:40:24,045 [INFO] Test log
+2023-05-13 16:40:24,048 [INFO] Load csv. Takes some time
+2023-05-13 16:41:04,523 [INFO] Load embedding_model
+2023-05-13 16:41:04,523 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:41:06,312 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2023-05-13 16:41:06,312 [INFO] [33mPress CTRL+C to quit[0m
+2023-05-13 16:41:06,315 [INFO]  * Restarting with stat
+2023-05-13 16:41:13,524 [INFO] Test log
+2023-05-13 16:41:13,527 [INFO] Load csv. Takes some time
+2023-05-13 16:41:55,018 [INFO] Load embedding_model
+2023-05-13 16:41:55,019 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:41:56,726 [WARNING]  * Debugger is active!
+2023-05-13 16:41:56,732 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 16:41:56,812 [INFO] 127.0.0.1 - - [13/May/2023 16:41:56] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 16:41:56,815 [INFO] Got request
+2023-05-13 16:41:56,816 [INFO] Query is: asdf
+2023-05-13 16:42:20,662 [INFO] Test log
+2023-05-13 16:43:01,866 [INFO] Load embedding_model
+2023-05-13 16:43:01,866 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:43:03,543 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2023-05-13 16:43:03,544 [INFO] [33mPress CTRL+C to quit[0m
+2023-05-13 16:43:03,546 [INFO]  * Restarting with stat
+2023-05-13 16:43:10,997 [INFO] Test log
+2023-05-13 16:43:50,893 [INFO] Load embedding_model
+2023-05-13 16:43:50,893 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:43:52,562 [WARNING]  * Debugger is active!
+2023-05-13 16:43:52,568 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 16:43:52,651 [INFO] 127.0.0.1 - - [13/May/2023 16:43:52] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 16:43:52,655 [INFO] Got request
+2023-05-13 16:43:52,655 [INFO] Query is: asdf
+2023-05-13 16:45:23,450 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 16:45:24,197 [INFO]  * Restarting with stat
+2023-05-13 16:45:44,482 [INFO] Test log
+2023-05-13 16:45:45,440 [INFO] Load embedding_model
+2023-05-13 16:45:45,440 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:45:47,002 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2023-05-13 16:45:47,002 [INFO] [33mPress CTRL+C to quit[0m
+2023-05-13 16:45:47,004 [INFO]  * Restarting with stat
+2023-05-13 16:45:51,010 [INFO] Test log
+2023-05-13 16:45:52,000 [INFO] Load embedding_model
+2023-05-13 16:45:52,000 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:45:53,499 [WARNING]  * Debugger is active!
+2023-05-13 16:45:53,501 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 16:46:04,532 [INFO] 127.0.0.1 - - [13/May/2023 16:46:04] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 16:46:04,780 [INFO] Got request
+2023-05-13 16:46:04,780 [INFO] Query is: asdf
+2023-05-13 16:46:05,450 [ERROR] Error processing query asdf: 'float' object is not iterable
+2023-05-13 16:46:05,451 [INFO] 127.0.0.1 - - [13/May/2023 16:46:05] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 16:46:20,825 [INFO] Test log
+2023-05-13 16:46:24,388 [INFO] Load embedding_model
+2023-05-13 16:46:24,389 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:46:26,058 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2023-05-13 16:46:26,059 [INFO] [33mPress CTRL+C to quit[0m
+2023-05-13 16:46:26,062 [INFO]  * Restarting with stat
+2023-05-13 16:46:32,450 [INFO] Test log
+2023-05-13 16:46:36,088 [INFO] Load embedding_model
+2023-05-13 16:46:36,088 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:46:37,737 [WARNING]  * Debugger is active!
+2023-05-13 16:46:37,743 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 16:47:02,154 [INFO] 127.0.0.1 - - [13/May/2023 16:47:02] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 16:47:02,419 [INFO] Got request
+2023-05-13 16:47:02,419 [INFO] Query is: asdf
+2023-05-13 16:49:11,289 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 16:49:12,018 [INFO]  * Restarting with stat
+2023-05-13 16:49:18,411 [INFO] Test log
+2023-05-13 16:49:22,018 [INFO] Load embedding_model
+2023-05-13 16:49:22,018 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:49:23,673 [WARNING]  * Debugger is active!
+2023-05-13 16:49:23,679 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 16:50:02,781 [INFO] Test log
+2023-05-13 16:50:03,729 [INFO] Load embedding_model
+2023-05-13 16:50:03,730 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:50:05,240 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2023-05-13 16:50:05,240 [INFO] [33mPress CTRL+C to quit[0m
+2023-05-13 16:50:05,241 [INFO]  * Restarting with stat
+2023-05-13 16:50:08,754 [INFO] Test log
+2023-05-13 16:50:09,692 [INFO] Load embedding_model
+2023-05-13 16:50:09,692 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:50:11,166 [WARNING]  * Debugger is active!
+2023-05-13 16:50:11,169 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 16:50:21,605 [INFO] 127.0.0.1 - - [13/May/2023 16:50:21] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 16:50:21,854 [INFO] Got request
+2023-05-13 16:50:21,854 [INFO] Query is: asdf
+2023-05-13 16:50:22,511 [ERROR] Error processing query asdf: 'float' object is not iterable
+2023-05-13 16:50:22,512 [INFO] 127.0.0.1 - - [13/May/2023 16:50:22] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 16:52:03,003 [INFO] Test log
+2023-05-13 16:52:03,947 [INFO] Load embedding_model
+2023-05-13 16:52:03,948 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:52:05,454 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2023-05-13 16:52:05,455 [INFO] [33mPress CTRL+C to quit[0m
+2023-05-13 16:52:05,456 [INFO]  * Restarting with stat
+2023-05-13 16:52:08,998 [INFO] Test log
+2023-05-13 16:52:09,945 [INFO] Load embedding_model
+2023-05-13 16:52:09,945 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:52:11,462 [WARNING]  * Debugger is active!
+2023-05-13 16:52:11,465 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 16:52:15,253 [INFO] 127.0.0.1 - - [13/May/2023 16:52:15] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 16:52:15,516 [INFO] Got request
+2023-05-13 16:52:15,516 [INFO] Query is: asdf
+2023-05-13 16:52:16,171 [ERROR] Error processing query asdf: 'float' object is not iterable
+2023-05-13 16:52:16,171 [INFO] 127.0.0.1 - - [13/May/2023 16:52:16] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 16:53:08,033 [INFO] Test log
+2023-05-13 16:53:11,610 [INFO] Load embedding_model
+2023-05-13 16:53:11,610 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:53:13,303 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2023-05-13 16:53:13,303 [INFO] [33mPress CTRL+C to quit[0m
+2023-05-13 16:53:13,306 [INFO]  * Restarting with stat
+2023-05-13 16:53:19,662 [INFO] Test log
+2023-05-13 16:53:23,195 [INFO] Load embedding_model
+2023-05-13 16:53:23,195 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:53:25,088 [WARNING]  * Debugger is active!
+2023-05-13 16:53:25,094 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 16:53:25,371 [INFO] 127.0.0.1 - - [13/May/2023 16:53:25] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 16:53:25,634 [INFO] Got request
+2023-05-13 16:53:25,634 [INFO] Query is: asdf
+2023-05-13 16:56:13,771 [INFO] Test log
+2023-05-13 16:56:14,717 [INFO] Load embedding_model
+2023-05-13 16:56:14,717 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:56:16,216 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2023-05-13 16:56:16,216 [INFO] [33mPress CTRL+C to quit[0m
+2023-05-13 16:56:16,218 [INFO]  * Restarting with stat
+2023-05-13 16:56:19,855 [INFO] Test log
+2023-05-13 16:56:20,817 [INFO] Load embedding_model
+2023-05-13 16:56:20,817 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:56:22,326 [WARNING]  * Debugger is active!
+2023-05-13 16:56:22,329 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 16:56:22,341 [INFO] 127.0.0.1 - - [13/May/2023 16:56:22] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 16:56:22,343 [INFO] Got request
+2023-05-13 16:56:22,343 [INFO] Query is: asdf
+2023-05-13 16:56:24,349 [INFO] Done query asdf
+2023-05-13 16:56:24,408 [INFO] 127.0.0.1 - - [13/May/2023 16:56:24] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 16:56:49,715 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 16:56:50,322 [INFO]  * Restarting with stat
+2023-05-13 16:56:53,972 [INFO] Test log
+2023-05-13 16:56:54,921 [INFO] Load embedding_model
+2023-05-13 16:56:54,921 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:56:56,431 [WARNING]  * Debugger is active!
+2023-05-13 16:56:56,433 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 16:57:00,508 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 16:57:01,122 [INFO]  * Restarting with stat
+2023-05-13 16:57:04,697 [INFO] Test log
+2023-05-13 16:57:05,648 [INFO] Load embedding_model
+2023-05-13 16:57:05,648 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:57:07,156 [WARNING]  * Debugger is active!
+2023-05-13 16:57:07,159 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 16:57:11,215 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 16:57:11,966 [INFO]  * Restarting with stat
+2023-05-13 16:57:15,611 [INFO] Test log
+2023-05-13 16:57:16,568 [INFO] Load embedding_model
+2023-05-13 16:57:16,569 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:57:18,106 [WARNING]  * Debugger is active!
+2023-05-13 16:57:18,109 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 16:57:18,125 [INFO] 127.0.0.1 - - [13/May/2023 16:57:18] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 16:57:18,126 [INFO] Got request
+2023-05-13 16:57:18,127 [INFO] Query is: zdravje
+2023-05-13 16:57:20,191 [INFO] Done query zdravje
+2023-05-13 16:57:20,252 [INFO] 127.0.0.1 - - [13/May/2023 16:57:20] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 16:58:17,866 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 16:58:18,455 [INFO]  * Restarting with stat
+2023-05-13 16:58:22,136 [INFO] Test log
+2023-05-13 16:58:23,099 [INFO] Load embedding_model
+2023-05-13 16:58:23,099 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 16:58:24,595 [WARNING]  * Debugger is active!
+2023-05-13 16:58:24,598 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 17:02:15,201 [INFO] Test log
+2023-05-13 17:02:54,841 [INFO] Load embedding_model
+2023-05-13 17:02:54,842 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 17:02:56,488 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2023-05-13 17:02:56,488 [INFO] [33mPress CTRL+C to quit[0m
+2023-05-13 17:02:56,491 [INFO]  * Restarting with stat
+2023-05-13 17:03:02,945 [INFO] Test log
+2023-05-13 17:03:42,159 [INFO] Load embedding_model
+2023-05-13 17:03:42,159 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 17:03:43,794 [WARNING]  * Debugger is active!
+2023-05-13 17:03:43,799 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 17:03:43,879 [INFO] 127.0.0.1 - - [13/May/2023 17:03:43] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 17:03:43,882 [INFO] Got request
+2023-05-13 17:03:43,883 [INFO] Query is: zdravje
+2023-05-13 17:08:53,839 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\transcribe\\download_feed.py', reloading
+2023-05-13 17:08:54,679 [INFO]  * Restarting with stat
+2023-05-13 17:09:01,266 [INFO] Test log
+2023-05-13 17:09:41,870 [INFO] Load embedding_model
+2023-05-13 17:09:41,870 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 17:09:43,517 [WARNING]  * Debugger is active!
+2023-05-13 17:09:43,523 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 17:09:43,607 [INFO] Got request
+2023-05-13 17:09:43,608 [INFO] Query is: zdravje
+2023-05-13 17:10:27,482 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\transcribe\\download_feed.py', reloading
+2023-05-13 17:10:28,215 [INFO]  * Restarting with stat
+2023-05-13 17:10:34,680 [INFO] Test log
+2023-05-13 17:11:13,915 [INFO] Load embedding_model
+2023-05-13 17:11:13,915 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 17:11:15,585 [WARNING]  * Debugger is active!
+2023-05-13 17:11:15,589 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 17:41:40,014 [INFO] Test log
+2023-05-13 17:41:53,968 [INFO] Load embedding_model
+2023-05-13 17:41:53,968 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 17:41:55,888 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2023-05-13 17:41:55,888 [INFO] [33mPress CTRL+C to quit[0m
+2023-05-13 17:41:55,890 [INFO]  * Restarting with stat
+2023-05-13 17:42:12,987 [INFO] Load embedding_model
+2023-05-13 17:42:12,987 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 17:42:14,516 [WARNING]  * Debugger is active!
+2023-05-13 17:42:14,519 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 17:42:14,532 [INFO] 127.0.0.1 - - [13/May/2023 17:42:14] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 17:42:14,534 [INFO] Got request
+2023-05-13 17:42:14,535 [INFO] Query is: zdravje
+2023-05-13 17:42:14,946 [INFO] 127.0.0.1 - - [13/May/2023 17:42:14] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 17:42:15,258 [INFO] Got request
+2023-05-13 17:42:15,259 [INFO] Query is: zdravje
+2023-05-13 17:42:18,903 [INFO] Done query zdravje
+2023-05-13 17:42:18,999 [INFO] Done query zdravje
+2023-05-13 17:42:19,202 [INFO] 127.0.0.1 - - [13/May/2023 17:42:19] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 17:42:19,290 [INFO] 127.0.0.1 - - [13/May/2023 17:42:19] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 17:42:33,448 [INFO] 127.0.0.1 - - [13/May/2023 17:42:33] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 17:42:33,704 [INFO] Got request
+2023-05-13 17:42:33,704 [INFO] Query is: duševno zdravje meditacija
+2023-05-13 17:42:33,908 [INFO] Done query duševno zdravje meditacija
+2023-05-13 17:42:34,114 [INFO] 127.0.0.1 - - [13/May/2023 17:42:34] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 17:43:04,392 [INFO] 127.0.0.1 - - [13/May/2023 17:43:04] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 17:43:04,707 [INFO] Got request
+2023-05-13 17:43:04,707 [INFO] Query is: podjetništvo, startup 
+2023-05-13 17:43:04,890 [INFO] Done query podjetništvo, startup 
+2023-05-13 17:43:05,155 [INFO] 127.0.0.1 - - [13/May/2023 17:43:05] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 17:43:42,278 [INFO] 127.0.0.1 - - [13/May/2023 17:43:42] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 17:43:42,594 [INFO] Got request
+2023-05-13 17:43:42,595 [INFO] Query is: umetna inteligenca
+2023-05-13 17:43:42,747 [INFO] Done query umetna inteligenca
+2023-05-13 17:43:42,852 [INFO] 127.0.0.1 - - [13/May/2023 17:43:42] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 17:44:03,087 [INFO] 127.0.0.1 - - [13/May/2023 17:44:03] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 17:44:03,400 [INFO] Got request
+2023-05-13 17:44:03,400 [INFO] Query is: umetna inteligenca
+2023-05-13 17:44:03,550 [INFO] Done query umetna inteligenca
+2023-05-13 17:44:03,651 [INFO] 127.0.0.1 - - [13/May/2023 17:44:03] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 17:45:20,961 [INFO] Load embedding_model
+2023-05-13 17:45:20,961 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 17:45:22,720 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2023-05-13 17:45:22,720 [INFO] [33mPress CTRL+C to quit[0m
+2023-05-13 17:45:22,723 [INFO]  * Restarting with stat
+2023-05-13 17:45:39,705 [INFO] Load embedding_model
+2023-05-13 17:45:39,705 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 17:45:41,209 [WARNING]  * Debugger is active!
+2023-05-13 17:45:41,215 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 17:45:41,229 [INFO] 127.0.0.1 - - [13/May/2023 17:45:41] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 17:45:41,231 [INFO] Got request
+2023-05-13 17:45:41,231 [INFO] Query is: umetna inteligenca
+2023-05-13 17:45:43,574 [INFO] Done query umetna inteligenca
+2023-05-13 17:45:43,667 [INFO] 127.0.0.1 - - [13/May/2023 17:45:43] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 18:01:08,610 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 18:01:09,312 [INFO]  * Restarting with stat
+2023-05-13 18:01:26,118 [INFO] Load embedding_model
+2023-05-13 18:01:26,118 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 18:01:27,731 [WARNING]  * Debugger is active!
+2023-05-13 18:01:27,734 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 18:03:23,090 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 18:03:23,694 [INFO]  * Restarting with stat
+2023-05-13 18:03:40,131 [INFO] Load embedding_model
+2023-05-13 18:03:40,131 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 18:03:41,618 [WARNING]  * Debugger is active!
+2023-05-13 18:03:41,622 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 18:04:15,042 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 18:04:15,625 [INFO]  * Restarting with stat
+2023-05-13 18:04:32,894 [INFO] Load embedding_model
+2023-05-13 18:04:32,894 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 18:04:34,434 [WARNING]  * Debugger is active!
+2023-05-13 18:04:34,439 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 18:04:37,748 [INFO] 127.0.0.1 - - [13/May/2023 18:04:37] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 18:04:38,010 [INFO] Got request
+2023-05-13 18:04:38,010 [INFO] Query is: umetna inteligenca
+2023-05-13 18:04:40,406 [INFO] Done query umetna inteligenca
+2023-05-13 18:04:40,454 [INFO] 127.0.0.1 - - [13/May/2023 18:04:40] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 18:13:10,158 [INFO] 127.0.0.1 - - [13/May/2023 18:13:10] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 18:13:10,422 [INFO] Got request
+2023-05-13 18:13:10,423 [INFO] Query is: umetna inteligenca
+2023-05-13 18:13:10,583 [INFO] Done query umetna inteligenca
+2023-05-13 18:13:10,649 [INFO] 127.0.0.1 - - [13/May/2023 18:13:10] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 18:13:15,310 [INFO] 127.0.0.1 - - [13/May/2023 18:13:15] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 18:13:15,618 [INFO] Got request
+2023-05-13 18:13:15,618 [INFO] Query is: zdravje
+2023-05-13 18:13:16,499 [INFO] 127.0.0.1 - - [13/May/2023 18:13:16] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 18:13:16,816 [INFO] Got request
+2023-05-13 18:13:16,816 [INFO] Query is: zdravje
+2023-05-13 18:13:17,130 [INFO] Done query zdravje
+2023-05-13 18:13:17,256 [INFO] 127.0.0.1 - - [13/May/2023 18:13:17] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 18:13:18,412 [INFO] Done query zdravje
+2023-05-13 18:13:18,544 [INFO] 127.0.0.1 - - [13/May/2023 18:13:18] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 18:13:19,191 [INFO] 127.0.0.1 - - [13/May/2023 18:13:19] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 18:13:19,194 [INFO] 127.0.0.1 - - [13/May/2023 18:13:19] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 18:13:19,501 [INFO] Got request
+2023-05-13 18:13:19,502 [INFO] Query is: zdravje
+2023-05-13 18:13:19,503 [INFO] Got request
+2023-05-13 18:13:19,503 [INFO] Query is: zdravje
+2023-05-13 18:13:20,023 [INFO] Done query zdravje
+2023-05-13 18:13:20,153 [INFO] 127.0.0.1 - - [13/May/2023 18:13:20] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 18:13:20,177 [INFO] Done query zdravje
+2023-05-13 18:13:20,306 [INFO] 127.0.0.1 - - [13/May/2023 18:13:20] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 18:13:56,667 [INFO] 127.0.0.1 - - [13/May/2023 18:13:56] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 18:13:56,933 [INFO] Got request
+2023-05-13 18:13:56,933 [INFO] Query is: zdravje
+2023-05-13 18:13:57,067 [INFO] Done query zdravje
+2023-05-13 18:13:57,222 [INFO] 127.0.0.1 - - [13/May/2023 18:13:57] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 18:14:38,901 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 18:14:39,585 [INFO]  * Restarting with stat
+2023-05-13 18:14:56,500 [INFO] Load embedding_model
+2023-05-13 18:14:56,500 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 18:14:57,982 [WARNING]  * Debugger is active!
+2023-05-13 18:14:57,985 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 18:14:57,996 [INFO] 127.0.0.1 - - [13/May/2023 18:14:57] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 18:14:57,999 [INFO] Got request
+2023-05-13 18:15:00,379 [INFO] 127.0.0.1 - - [13/May/2023 18:15:00] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 18:18:31,133 [INFO] 127.0.0.1 - - [13/May/2023 18:18:31] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 18:18:31,394 [INFO] Got request
+2023-05-13 18:18:31,394 [INFO] Query is: asdas
+2023-05-13 18:18:31,576 [INFO] Done query asdas
+2023-05-13 18:18:31,629 [INFO] 127.0.0.1 - - [13/May/2023 18:18:31] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 18:18:39,196 [INFO] 127.0.0.1 - - [13/May/2023 18:18:39] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 18:18:39,502 [INFO] Got request
+2023-05-13 18:18:39,502 [INFO] Query is: umetna inteligenca
+2023-05-13 18:18:39,672 [INFO] Done query umetna inteligenca
+2023-05-13 18:18:39,742 [INFO] 127.0.0.1 - - [13/May/2023 18:18:39] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 18:20:15,929 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 18:20:16,525 [INFO]  * Restarting with stat
+2023-05-13 18:20:33,447 [INFO] Load embedding_model
+2023-05-13 18:20:33,448 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 18:20:34,942 [WARNING]  * Debugger is active!
+2023-05-13 18:20:34,945 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 18:20:36,504 [INFO] 127.0.0.1 - - [13/May/2023 18:20:36] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 18:20:36,755 [INFO] Got request
+2023-05-13 18:20:36,755 [INFO] Query is: avtomastka umetna inteligenca 
+2023-05-13 18:20:38,191 [INFO] 127.0.0.1 - - [13/May/2023 18:20:38] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 18:20:38,503 [INFO] Got request
+2023-05-13 18:20:38,503 [INFO] Query is: avtomastka umetna inteligenca 
+2023-05-13 18:20:39,203 [INFO] Done query avtomastka umetna inteligenca 
+2023-05-13 18:20:39,270 [INFO] 127.0.0.1 - - [13/May/2023 18:20:39] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 18:20:40,057 [INFO] Done query avtomastka umetna inteligenca 
+2023-05-13 18:20:40,115 [INFO] 127.0.0.1 - - [13/May/2023 18:20:40] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 19:05:04,706 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 19:05:06,404 [INFO]  * Restarting with stat
+2023-05-13 19:05:25,130 [INFO] Load embedding_model
+2023-05-13 19:05:25,130 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 19:05:27,002 [WARNING]  * Debugger is active!
+2023-05-13 19:05:27,007 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 19:05:44,250 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 19:05:44,864 [INFO]  * Restarting with stat
+2023-05-13 19:06:01,451 [INFO] Load embedding_model
+2023-05-13 19:06:01,451 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 19:06:03,015 [WARNING]  * Debugger is active!
+2023-05-13 19:06:03,018 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 19:06:21,354 [INFO] 127.0.0.1 - - [13/May/2023 19:06:21] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 19:06:21,617 [INFO] Got request
+2023-05-13 19:06:21,617 [INFO] Query is: zdravje
+2023-05-13 19:06:21,793 [ERROR] Error processing query zdravje: "None of [Index(['episode_title', 'similarity', 'start_time', 'end_time'], dtype='object')] are in the [columns]"
+2023-05-13 19:06:21,794 [INFO] 127.0.0.1 - - [13/May/2023 19:06:21] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 19:06:54,635 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 19:06:55,213 [INFO]  * Restarting with stat
+2023-05-13 19:07:20,992 [INFO] Load embedding_model
+2023-05-13 19:07:20,992 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 19:07:22,503 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2023-05-13 19:07:22,503 [INFO] [33mPress CTRL+C to quit[0m
+2023-05-13 19:07:22,504 [INFO]  * Restarting with stat
+2023-05-13 19:07:39,473 [INFO] Load embedding_model
+2023-05-13 19:07:39,473 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 19:07:41,042 [WARNING]  * Debugger is active!
+2023-05-13 19:07:41,045 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 19:07:54,650 [INFO] 127.0.0.1 - - [13/May/2023 19:07:54] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 19:07:54,916 [INFO] Got request
+2023-05-13 19:07:54,916 [INFO] Query is: asd
+2023-05-13 19:07:55,098 [ERROR] Error processing query asd: "None of [Index(['episode_title', 'similarity', 'start_time', 'end_time'], dtype='object')] are in the [columns]"
+2023-05-13 19:07:55,099 [INFO] 127.0.0.1 - - [13/May/2023 19:07:55] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 19:09:15,351 [INFO] Load embedding_model
+2023-05-13 19:09:15,351 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 19:09:17,109 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2023-05-13 19:09:17,109 [INFO] [33mPress CTRL+C to quit[0m
+2023-05-13 19:09:17,112 [INFO]  * Restarting with stat
+2023-05-13 19:10:13,233 [INFO] Load embedding_model
+2023-05-13 19:10:13,234 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 19:10:14,905 [WARNING]  * Debugger is active!
+2023-05-13 19:10:14,910 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 19:10:15,036 [INFO] 127.0.0.1 - - [13/May/2023 19:10:15] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 19:10:15,040 [INFO] Got request
+2023-05-13 19:10:15,040 [INFO] Query is: zdravje
+2023-05-13 20:00:13,733 [INFO] Load embedding_model
+2023-05-13 20:00:13,733 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 20:00:15,331 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2023-05-13 20:00:15,331 [INFO] [33mPress CTRL+C to quit[0m
+2023-05-13 20:00:15,333 [INFO]  * Restarting with stat
+2023-05-13 20:00:31,520 [INFO] Load embedding_model
+2023-05-13 20:00:31,521 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 20:00:33,031 [WARNING]  * Debugger is active!
+2023-05-13 20:00:33,035 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 20:00:58,947 [INFO] 127.0.0.1 - - [13/May/2023 20:00:58] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 20:00:59,207 [INFO] Got request
+2023-05-13 20:00:59,207 [INFO] Query is: zdravje
+2023-05-13 20:00:59,370 [ERROR] Error processing query zdravje: "Column(s) ['similarity'] do not exist"
+2023-05-13 20:00:59,371 [INFO] 127.0.0.1 - - [13/May/2023 20:00:59] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 20:03:22,897 [INFO] Load embedding_model
+2023-05-13 20:03:22,897 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 20:03:24,560 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2023-05-13 20:03:24,560 [INFO] [33mPress CTRL+C to quit[0m
+2023-05-13 20:03:24,564 [INFO]  * Restarting with stat
+2023-05-13 20:04:19,699 [INFO] Load embedding_model
+2023-05-13 20:04:19,700 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 20:04:21,348 [WARNING]  * Debugger is active!
+2023-05-13 20:04:21,353 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 20:04:21,440 [INFO] 127.0.0.1 - - [13/May/2023 20:04:21] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 20:04:21,443 [INFO] Got request
+2023-05-13 20:04:21,443 [INFO] Query is: zdravje
+2023-05-13 20:04:39,863 [ERROR] Error processing query zdravje: "Column(s) ['similarity'] do not exist"
+2023-05-13 20:04:44,842 [INFO] 127.0.0.1 - - [13/May/2023 20:04:44] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 20:04:48,478 [INFO] 127.0.0.1 - - [13/May/2023 20:04:48] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 20:04:48,743 [INFO] Got request
+2023-05-13 20:04:48,743 [INFO] Query is: zdravje
+2023-05-13 20:09:46,874 [ERROR] Error processing query zdravje: "Column(s) ['similarity'] do not exist"
+2023-05-13 20:09:46,877 [INFO] 127.0.0.1 - - [13/May/2023 20:09:46] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 20:09:52,205 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 20:09:52,920 [INFO]  * Restarting with stat
+2023-05-13 20:10:48,890 [INFO] Load embedding_model
+2023-05-13 20:10:48,890 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 20:10:50,548 [WARNING]  * Debugger is active!
+2023-05-13 20:10:50,553 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 20:10:50,631 [INFO] 127.0.0.1 - - [13/May/2023 20:10:50] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 20:11:08,697 [INFO] 127.0.0.1 - - [13/May/2023 20:11:08] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 20:11:08,947 [INFO] Got request
+2023-05-13 20:11:08,947 [INFO] Query is: zdravje
+2023-05-13 20:11:19,165 [ERROR] Error processing query zdravje: 'similarity'
+2023-05-13 20:11:19,166 [INFO] 127.0.0.1 - - [13/May/2023 20:11:19] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 20:11:27,867 [INFO] 127.0.0.1 - - [13/May/2023 20:11:27] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 20:11:28,182 [INFO] Got request
+2023-05-13 20:11:28,183 [INFO] Query is: zdravje
+2023-05-13 20:11:28,627 [ERROR] Error processing query zdravje: 'similarity'
+2023-05-13 20:11:28,628 [INFO] 127.0.0.1 - - [13/May/2023 20:11:28] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 20:11:44,621 [INFO] 127.0.0.1 - - [13/May/2023 20:11:44] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 20:11:44,929 [INFO] Got request
+2023-05-13 20:11:44,930 [INFO] Query is: zdravje
+2023-05-13 20:12:30,624 [ERROR] Error processing query zdravje: 'similarity'
+2023-05-13 20:12:30,626 [INFO] 127.0.0.1 - - [13/May/2023 20:12:30] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 20:12:35,114 [INFO] 127.0.0.1 - - [13/May/2023 20:12:35] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 20:12:35,429 [INFO] Got request
+2023-05-13 20:12:35,430 [INFO] Query is: zdravje
+2023-05-13 20:13:20,221 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 20:13:20,979 [INFO]  * Restarting with stat
+2023-05-13 20:14:35,977 [INFO] Load embedding_model
+2023-05-13 20:14:35,977 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 20:14:37,653 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2023-05-13 20:14:37,654 [INFO] [33mPress CTRL+C to quit[0m
+2023-05-13 20:14:37,656 [INFO]  * Restarting with stat
+2023-05-13 20:14:43,218 [INFO] Load embedding_model
+2023-05-13 20:14:43,219 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 20:14:44,695 [WARNING]  * Debugger is active!
+2023-05-13 20:14:44,698 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 20:14:56,543 [INFO] 127.0.0.1 - - [13/May/2023 20:14:56] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 20:14:56,792 [INFO] Got request
+2023-05-13 20:14:56,792 [INFO] Query is: zdravje
+2023-05-13 20:14:56,851 [ERROR] Error processing query zdravje: "['start_time', 'end_time'] not in index"
+2023-05-13 20:14:56,851 [INFO] 127.0.0.1 - - [13/May/2023 20:14:56] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 20:15:18,134 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 20:15:18,757 [INFO]  * Restarting with stat
+2023-05-13 20:15:24,324 [INFO] Load embedding_model
+2023-05-13 20:15:24,324 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 20:15:25,790 [WARNING]  * Debugger is active!
+2023-05-13 20:15:25,794 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 20:15:25,805 [INFO] 127.0.0.1 - - [13/May/2023 20:15:25] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 20:15:25,807 [INFO] Got request
+2023-05-13 20:15:25,807 [INFO] Query is: zdravje
+2023-05-13 20:15:25,869 [ERROR] Error processing query zdravje: "['start_time', 'end_time'] not in index"
+2023-05-13 20:15:25,870 [INFO] 127.0.0.1 - - [13/May/2023 20:15:25] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 20:15:34,938 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 20:15:35,580 [INFO]  * Restarting with stat
+2023-05-13 20:15:41,066 [INFO] Load embedding_model
+2023-05-13 20:15:41,068 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 20:15:42,546 [WARNING]  * Debugger is active!
+2023-05-13 20:15:42,548 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 20:15:44,948 [INFO] 127.0.0.1 - - [13/May/2023 20:15:44] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 20:15:45,214 [INFO] Got request
+2023-05-13 20:15:45,214 [INFO] Query is: zdravje
+2023-05-13 20:15:45,272 [ERROR] Error processing query zdravje: "['start_time', 'end_time'] not in index"
+2023-05-13 20:15:45,273 [INFO] 127.0.0.1 - - [13/May/2023 20:15:45] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 20:16:02,809 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 20:16:03,358 [INFO]  * Restarting with stat
+2023-05-13 20:16:08,926 [INFO] Load embedding_model
+2023-05-13 20:16:08,927 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 20:16:10,423 [WARNING]  * Debugger is active!
+2023-05-13 20:16:10,426 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 20:16:10,438 [INFO] 127.0.0.1 - - [13/May/2023 20:16:10] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 20:16:10,440 [INFO] Got request
+2023-05-13 20:16:10,440 [INFO] Query is: zdravje
+2023-05-13 20:16:10,492 [ERROR] Error processing query zdravje: "['start_time', 'end_time'] not in index"
+2023-05-13 20:16:10,492 [INFO] 127.0.0.1 - - [13/May/2023 20:16:10] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 20:16:49,959 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 20:16:50,517 [INFO]  * Restarting with stat
+2023-05-13 20:16:55,946 [INFO] Load embedding_model
+2023-05-13 20:16:55,946 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 20:16:57,423 [WARNING]  * Debugger is active!
+2023-05-13 20:16:57,426 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 20:17:00,926 [INFO] 127.0.0.1 - - [13/May/2023 20:17:00] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 20:17:01,190 [INFO] Got request
+2023-05-13 20:17:01,190 [INFO] Query is: zdravje
+2023-05-13 20:17:01,250 [ERROR] Error processing query zdravje: "['start_time', 'end_time'] not in index"
+2023-05-13 20:17:01,250 [INFO] 127.0.0.1 - - [13/May/2023 20:17:01] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 20:17:25,813 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 20:17:26,447 [INFO]  * Restarting with stat
+2023-05-13 20:17:32,172 [INFO] Load embedding_model
+2023-05-13 20:17:32,173 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 20:17:33,734 [WARNING]  * Debugger is active!
+2023-05-13 20:17:33,736 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 20:17:33,748 [INFO] 127.0.0.1 - - [13/May/2023 20:17:33] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 20:17:33,750 [INFO] Got request
+2023-05-13 20:17:33,750 [INFO] Query is: zdravje
+2023-05-13 20:17:33,802 [ERROR] Error processing query zdravje: "['start_time', 'end_time'] not in index"
+2023-05-13 20:17:33,802 [INFO] 127.0.0.1 - - [13/May/2023 20:17:33] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 20:18:30,484 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 20:18:31,065 [INFO]  * Restarting with stat
+2023-05-13 20:18:36,514 [INFO] Load embedding_model
+2023-05-13 20:18:36,514 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 20:18:37,992 [WARNING]  * Debugger is active!
+2023-05-13 20:18:37,995 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 20:18:40,749 [INFO] 127.0.0.1 - - [13/May/2023 20:18:40] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 20:18:41,013 [INFO] Got request
+2023-05-13 20:18:41,013 [INFO] Query is: zdravje
+2023-05-13 20:18:44,353 [INFO] Done query zdravje
+2023-05-13 20:18:44,482 [INFO] 127.0.0.1 - - [13/May/2023 20:18:44] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 20:19:13,502 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 20:19:14,137 [INFO]  * Restarting with stat
+2023-05-13 20:19:19,824 [INFO] Load embedding_model
+2023-05-13 20:19:19,825 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 20:19:21,404 [WARNING]  * Debugger is active!
+2023-05-13 20:19:21,407 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 20:19:30,090 [INFO] 127.0.0.1 - - [13/May/2023 20:19:30] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 20:19:30,352 [INFO] Got request
+2023-05-13 20:19:30,352 [INFO] Query is: zdravje je lepo
+2023-05-13 20:19:33,710 [INFO] Done query zdravje je lepo
+2023-05-13 20:19:33,839 [INFO] 127.0.0.1 - - [13/May/2023 20:19:33] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 20:19:58,897 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 20:19:59,476 [INFO]  * Restarting with stat
+2023-05-13 20:20:04,960 [INFO] Load embedding_model
+2023-05-13 20:20:04,960 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 20:20:06,512 [WARNING]  * Debugger is active!
+2023-05-13 20:20:06,515 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 20:20:13,908 [INFO] 127.0.0.1 - - [13/May/2023 20:20:13] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 20:20:14,174 [INFO] Got request
+2023-05-13 20:20:14,175 [INFO] Query is: zdravje je lepo
+2023-05-13 20:20:17,484 [INFO] Done query zdravje je lepo
+2023-05-13 20:20:17,612 [INFO] 127.0.0.1 - - [13/May/2023 20:20:17] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 20:20:34,902 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 20:20:35,487 [INFO]  * Restarting with stat
+2023-05-13 20:20:41,229 [INFO] Load embedding_model
+2023-05-13 20:20:41,229 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 20:20:42,734 [WARNING]  * Debugger is active!
+2023-05-13 20:20:42,738 [INFO]  * Debugger PIN: 138-689-581
+2023-05-13 20:20:43,229 [INFO] 127.0.0.1 - - [13/May/2023 20:20:43] "OPTIONS /api/rank HTTP/1.1" 200 -
+2023-05-13 20:20:43,492 [INFO] Got request
+2023-05-13 20:20:43,493 [INFO] Query is: zdravje je lepo in upam da tako ostane
+2023-05-13 20:20:46,831 [INFO] Done query zdravje je lepo in upam da tako ostane
+2023-05-13 20:20:46,960 [INFO] 127.0.0.1 - - [13/May/2023 20:20:46] "POST /api/rank HTTP/1.1" 200 -
+2023-05-13 20:20:56,934 [INFO]  * Detected change in 'C:\\Users\\anzea\\GitRepositories\\DragonHack2023\\backend\\app.py', reloading
+2023-05-13 20:20:57,533 [INFO]  * Restarting with stat
+2023-05-13 20:21:03,186 [INFO] Load embedding_model
+2023-05-13 20:21:03,186 [INFO] Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2023-05-13 20:21:04,779 [WARNING]  * Debugger is active!
+2023-05-13 20:21:04,782 [INFO]  * Debugger PIN: 138-689-581

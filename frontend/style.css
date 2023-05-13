@@ -1,0 +1,135 @@
+/* Body and container styles */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Search form styles */
+form {
+  display: flex;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 600px;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+button[type="submit"] {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
+/* Results styles */
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 20px);
+  margin-bottom: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.result img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.result h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.result h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 20px 10px 20px;
+}
+
+.result p {
+  font-size: 16px;
+  margin: 10px 20px;
+  line-height: 1.5;
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 20px 10px;
+  }
+
+  .result {
+    width: 100%;
+  }
+}
+
+
+.card {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 5px;
+  width: 70%;
+  margin: 10px auto;
+}
+
+
+.card-header {
+  background-color: #f5f5f5;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-text {
+  margin-bottom: 10px;
+}

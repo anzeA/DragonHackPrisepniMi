@@ -1,0 +1,8 @@
+pandas
+numpy
+flask
+scipy
+sentence-transformers==2.2.2
+flask-cors
+flask
+Pillow
