@@ -32,8 +32,8 @@ def get_db_transcribe():
     csv_file = os.path.join(BASEDIR, 'data', 'all_transcriptions.csv')
     cols = {'title': str, 'podcast': str, 'start_time':int,'end_time':int, 'transcription': str}
     cols.update({f'embedding_{i}':np.float32 for i in range(384)})
-    print('read only 2000 rows')
-    df = pd.read_csv(csv_file,index_col=False,dtype=cols,nrows=2000)
+    #print('read only 2000 rows')
+    df = pd.read_csv(csv_file,index_col=False,dtype=cols)#,nrows=2000
     df["embedding"] = df.apply(lambda s: np.array([s[f"emb_{i}"] for i in range(384)]), axis=1)
     df = df.drop(columns=[f"emb_{i}" for i in range(384)])
     df = df.dropna()
@@ -96,30 +96,30 @@ def rank():
         # get the query from the client
         query = request.json.get('query', '')
         logging.info(f'Query is: {query}')
-        #query = "politika"
         embedding = np.array(embedding_model.encode(query).squeeze())
-        df_res = get_similar_news(embedding, df_transcribe, embedding_col="embedding")
-        df_res = df_res[['episode_title', 'similarity']].groupby('episode_title').agg( median=(
+
+        df_res_with_sim = get_similar_news(embedding, df_transcribe, embedding_col="embedding")
+        df_res = df_res_with_sim[['episode_title', 'similarity']].groupby('episode_title').agg( similarity=(
             'similarity', 'median'))
 
+        df_res = df_res.merge(df_metadata, how='left', on='episode_title').sort_values(by=['ad',"similarity"], ascending=False)
 
-
-        #df_res_time = df_res[['episode_title', 'similarity','start_time','end_time']].groupby('episode_title').agg(max=(
-        #    'similarity', 'max'),podcast_len=('end_time','max'))
-        df_res = df_res.merge(df_metadata, how='left', on='episode_title').sort_values(by=['ad',"median"], ascending=False)
-
-        df_time = df_transcribe[['start_time', 'end_time', 'episode_title']].merge(df_res, how='left',
-                                                                                   on='episode_title').groupby(
-            ['start_time', 'end_time', 'episode_title']).agg(max=('median', 'max')).reset_index()
-        df_time.rename(columns={'max': 'similarity'}, inplace=True)
-
-        df_res = df_res.rename(columns={'median':'similarity'})
-        df_res = df_time.merge(df_res, how='left', on=['episode_title', 'similarity'])
         df_res["show"] = ((df_res['ad'] == 1) & (df_res['similarity'] > 0.2)) | (df_res['ad'] == 0)
         df_res = df_res[df_res["show"] == True]
-        df_res = df_res.reset_index().head(10).copy()
+        df_res.drop_duplicates(subset=['episode_title'], inplace=True)
+        df_res = df_res.reset_index().sort_values(by=['ad',"similarity"], ascending=False).head(10).copy()
         df_res = df_res.dropna()
+
+        # dodej start pa end time
+        df_time = df_res_with_sim[df_res_with_sim.episode_title.isin(df_res.episode_title)  ][['start_time','episode_title','similarity']].drop_duplicates()
+
+        df_time2 = df_time[['episode_title','similarity']].groupby('episode_title').max().reset_index()
+        df_time2 = df_time2.merge(df_time, how='left', on=['episode_title','similarity'])
+        #display(df_time2)
+        df_res = df_res.merge(df_time2[['episode_title','start_time']], how='left', on='episode_title')
+        df_res.drop(columns=['index'], inplace=True)
         df_res['image'] = df_res.podcast_name.apply(lambda x: get_tmp_image(x))
+
         out = df_res.to_dict(orient='records')
         logging.info(f'Done query {query}')
         return jsonify(out)
