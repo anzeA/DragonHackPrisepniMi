@@ -143,11 +143,12 @@ def get_newest():
     df['image'] = df.podcast_name.apply(lambda x: get_tmp_image(x))
     return df.to_dict(orient='records')
 
-newest = get_newest()
+df_newest = get_newest()
 @app.route('/api/newest', methods=['GET'])
 @cross_origin()
 def newest():
-    return jsonify(newest)
+    global df_newest
+    return jsonify(df_newest)
 
 @app.route('/api/similar_episodes', methods=['GET'])
 @cross_origin()

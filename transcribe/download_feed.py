@@ -58,7 +58,7 @@ def get_db_metadata():
     cols = {"title_pretty":str,'episode_title': str, 'podcast_name': str, 'link_homepage': str, 'link_mp3': str, 'description': str, 'published':str}
 
     if os.path.isfile(csv_file):
-        return pd.read_csv(csv_file,index_col=False,dtype=cols)
+        return pd.read_csv(csv_file,index_col=False,dtype=cols).drop_duplicates()
     else:
         print('Create new db')
         return pd.DataFrame(columns=["title_pretty", 'episode_title', 'podcast_name', 'link_homepage','link_mp3','description', 'published'],dtype=cols)
@@ -69,7 +69,7 @@ def get_db_transcribe():
     cols.update({f'emb_{i}':np.float32 for i in range(384)})
 
     if os.path.isfile(csv_file):
-        return pd.read_csv(csv_file,index_col=False,dtype=cols)
+        return pd.read_csv(csv_file,index_col=False,dtype=cols).drop_duplicates()
     else:
         return pd.DataFrame(columns=list(cols.keys()),dtype=cols)
 
@@ -217,9 +217,9 @@ def download_feed(feed_url):
             logging.error(traceback.format_exc())
             continue
 
-        #if "".join(x for x in entry_data['title'] if x.isalnum()) in set(df_transcription['episode_title']):
-        #    logging.info(f'Podcast {entry_data["title"]} already exists in db')
-        #    continue
+        if "".join(x for x in entry_data['title'] if x.isalnum()) in set(df_transcription['episode_title']):
+            logging.info(f'Podcast {entry_data["title"]} already exists in db')
+            continue
         # Download the podcast episode
         try:
             df_episode = download_podcast(**entry_data)
@@ -254,6 +254,9 @@ def download_feed(feed_url):
         df_transcription.to_csv(os.path.join(BASEDIR, 'data', 'all_transcriptions.csv'),index=False)
         logging.info(f'Podcast {entry_data["title"]} downloaded successfully')
 
+        if i > 10:
+            logging.info(f'Break after {i} podcasts')
+            break
     return
 
 
@@ -266,8 +269,9 @@ def download(feed_urls):
 
 if __name__ == '__main__':
     feed_urls = [
-        'https://feeds.blubrry.com/feeds/moneyhow.xml',
+
         'http://podcast.rtvslo.si/zoga_je_okrogla.xml',
+        'https://feeds.blubrry.com/feeds/moneyhow.xml',
         'https://anchor.fm/s/964a7d24/podcast/rss', # ogroje
         'https://anchor.fm/s/1c9278b0/podcast/rss',
                  'https://aidea.libsyn.com/rss', 
