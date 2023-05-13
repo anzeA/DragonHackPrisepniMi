@@ -6,22 +6,48 @@ body {
   background-color: #f2f2f2;
 }
 
+.titleDiv {
+  background-color: #bdbdbd;
+}
+.topRow {
+  width: 80%;
+}
+
+
+ .row {
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+} 
+
+.col-4 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.col-8 {
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
 /* Search form styles */
 form {
-  display: flex;
+
   margin-bottom: 40px;
   width: 100%;
-  max-width: 600px;
   justify-content: center;
   align-items: center;
 }
@@ -51,6 +77,24 @@ button[type="submit"]:hover {
   background-color: #0069d9;
 }
 
+.play {
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px 5px 5px 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin: 10px;
+}
+
+.play:hover {
+  background-color: #0069d9;
+}
+
 /* Results styles */
 .results {
   display: flex;
@@ -63,7 +107,8 @@ button[type="submit"]:hover {
 .result {
   display: flex;
   flex-direction: column;
-  width: calc(50% - 20px);
+  width: calc(80% - 20px);
+  margin: auto;
   margin-bottom: 40px;
   background-color: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -72,13 +117,14 @@ button[type="submit"]:hover {
 }
 
 .result img {
+  
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
 .result h2 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   margin: 20px;
 }
@@ -86,13 +132,52 @@ button[type="submit"]:hover {
 .result h3 {
   font-size: 18px;
   font-weight: bold;
-  margin: 0 20px 10px 20px;
+  margin: 10px 20px;
 }
 
+.result a {
+  margin: 10px 20px;
+  font-size: 15px;
+}
 .result p {
-  font-size: 16px;
+  font-size: 10px;
   margin: 10px 20px;
   line-height: 1.5;
+}
+
+.bottom {
+  background-color: #bdbdbd;
+}
+
+.progressBar {
+  margin-left: 5px;
+  margin-bottom: 5px;
+  height: 4px;
+  display: inline-block;
+  width: 70%;
+  overflow: hidden;
+  cursor: pointer
+}
+
+.audioListened {
+  width: 0%;
+  height: 100%;
+  background-color: #007bff;
+  float: left;
+}
+
+.audioLeft{
+  width: 100%;
+  height: 100%;
+  background-color: #555555;
+  float: left;
+}
+
+.audioText{
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: -50px;
 }
 
 /* Media queries */
@@ -103,6 +188,10 @@ button[type="submit"]:hover {
 
   .result {
     width: 100%;
+  }
+
+  .progressBar {
+    width: 90%;
   }
 }
 
@@ -132,4 +221,8 @@ button[type="submit"]:hover {
 
 .card-text {
   margin-bottom: 10px;
+}
+
+.test {
+  height: 20px;
 }
