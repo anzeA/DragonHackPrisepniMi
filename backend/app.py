@@ -6,7 +6,6 @@ import logging
 import os
 import base64
 import io
-from scipy.spatial.distance import cosine
 from sentence_transformers import SentenceTransformer
 from functools import lru_cache
 from PIL import Image    
@@ -22,8 +21,11 @@ logging.basicConfig(
 app = Flask(__name__)
 cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 BASEDIR = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),'..'))
-@lru_cache()
 def get_db_metadata():
+    '''
+    Load metadata from csv file
+    :return: pandas dataframe with columns: episode_title_pretty,episode_title,podcast_name,link_homepage,link_mp3,description,published
+    '''
     csv_file = os.path.join(BASEDIR, 'data', 'podcasts_meta.csv')
     cols = {"title_pretty":str,'episode_title': str, 'podcast_name': str, 'link_homepage': str, 'link_mp3': str, 'description': str, 'published':str}
     df = pd.read_csv(csv_file,index_col=False,dtype=cols).dropna()
@@ -37,8 +39,12 @@ def get_db_metadata():
 
     df["ad"] = df['episode_title_pretty'].apply(lambda x: 1 if x in ad_episode_titles else 0)
     return df
-@lru_cache()
+
 def get_db_transcribe():
+    ''''
+    Load transcriptions from csv file
+    :return: pandas dataframe with columns: title, podcast, start_time, end_time, transcription, embedding. Where start_time and end_time are in miliseconds and embedding is a 384 dimensional numpy vector
+    '''
     csv_file = os.path.join(BASEDIR, 'data', 'all_transcriptions.csv')
     cols = {'title': str, 'podcast': str, 'start_time':int,'end_time':int, 'transcription': str}
     cols.update({f'embedding_{i}':np.float32 for i in range(384)})
@@ -47,7 +53,19 @@ def get_db_transcribe():
     df = df.dropna()
     df["embedding"] = df.apply(lambda s: np.array([s[f"emb_{i}"] for i in range(384)]), axis=1)
     df = df.drop(columns=[f"emb_{i}" for i in range(384)])
+    return df
 
+def get_db_transcribe_no_vector():
+    ''''
+    Load transcriptions from csv file
+    :return: pandas dataframe with columns: title, podcast, start_time, end_time, transcription, embedding. Where start_time and end_time are in miliseconds and embedding is a 384 dimensional numpy vector
+    '''
+    csv_file = os.path.join(BASEDIR, 'data', 'all_transcriptions.csv')
+    cols = {'title': str, 'podcast': str, 'start_time':int,'end_time':int, 'transcription': str}
+    cols.update({f'embedding_{i}':np.float32 for i in range(384)})
+    #print('read only 2000 rows')
+    df = pd.read_csv(csv_file,index_col=False,dtype=cols)#,nrows=2000
+    df = df.dropna()
     return df
 
 
@@ -55,15 +73,22 @@ def get_db_transcribe():
 def index():
     return 'Welcome to the Podcast Search API'
 
+# load data
+logging.info('Load data. It might take a while...')
 df_transcribe = get_db_transcribe()
+df_transcribe_dim_cols = get_db_transcribe_no_vector()
 df_metadata = get_db_metadata()
-
 
 logging.info('Load embedding_model')
 embedding_model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2', device='cpu')
 
-@lru_cache()
+@lru_cache(maxsize=1024)
 def get_tmp_image(title):
+    '''
+    Get image from local storage
+    :param title: is podcast title (str) is should be the same as in the metadata csv file
+    :return: PNG image as base64 encoded string
+    '''
     if title is None:
         title = 'no_image_found'
     img_path = os.path.join(BASEDIR,'data','image',"".join(x for x in title if x.isalnum()) +'.png')
@@ -78,15 +103,34 @@ def get_tmp_image(title):
 
 
 def embed_news(text, model):
+    '''
+    Embed text using sentence transformer model
+    :param text: text to embed
+    :param model: model to use
+    :return: embedding as numpy array
+    '''
     return np.array(model.encode(text).squeeze())
 
 def get_similar_news(embedding, df, n=None, embedding_col="embedding"):
-    ## get similar news according to cosine similarity
+    '''
+    Get n most similar news to the embedding
+    :param embedding: query embedding
+    :param df: dataframe with embeddings
+    :param n: number of similar news to return if None return all
+    :param embedding_col:  name of the column with embeddings
+    :return: top n similar news
+    '''
     df["similarity"] = df[embedding_col].apply(lambda x: cosine_similarity(embedding, x))
     df = df.sort_values(by="similarity", ascending=False)
     return df.head(n) if isinstance(n,int) else df
 
 def cosine_similarity(a, b):
+    '''
+    Compute cosine similarity between two vectors
+    :param a: vector a
+    :param b: vector b
+    :return: cosine similarity
+    '''
     a=a.squeeze()
     b=b.squeeze()
     #print(a.shape, b.shape)
@@ -95,6 +139,11 @@ def cosine_similarity(a, b):
 @app.route('/api/rank', methods=['POST'])
 @cross_origin()
 def rank():
+    '''
+    Rank news based on the query
+    :return: json with ranked news
+    '''
+
     logging.info('Got request')
     query = ''
     try:
@@ -126,6 +175,7 @@ def rank():
         #print(df_res)
         #print(df_res.ad)
         df_res['image'] = df_res.podcast_name.apply(lambda x: get_tmp_image(x))
+        print(df_res.columns)
         out = df_res.to_dict(orient='records')
 
         logging.info(f'Done query {query}')
@@ -152,8 +202,8 @@ def newest():
 
 @app.route('/api/similar_episodes', methods=['GET'])
 @cross_origin()
-def similar_episodes():
-    episode_title = request.json.get('episode_title', '')
+def similar_episodes(episode_title):
+    df_transcribe =  df_transcribe_dim_cols
     global df_metadata
     df_pod = df_transcribe.groupby("episode_title").agg({f"emb_{i}": "median" for i in range(384)}).reset_index()
     df_pod["embedding"] = df_pod.apply(lambda s: np.array([s[f"emb_{i}"] for i in range(384)]), axis=1)
@@ -166,9 +216,7 @@ def similar_episodes():
     out = df_res[1:11].copy()
     out['image'] = out.podcast_name.apply(lambda x: get_tmp_image(x))
     out['ad'] = 0
-
-    out = out.to_dict(orient='records')
-    return out
+    return jsonify(out.to_dict(orient='records'))
 
 
 if __name__ == '__main__':

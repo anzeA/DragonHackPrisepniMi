@@ -237,7 +237,10 @@ def download_feed(feed_url):
         metadata["episode_title_pretty"].append(entry_data["title_pretty"])
         metadata["episode_title"].append(entry_data["title"])
         metadata["podcast_name"].append(feed_basic_info["title"])
-        metadata["link_homepage"].append(entry_data["episode_link"])
+        if entry_data["episode_link"] is None:
+            metadata["link_homepage"].append(feed_basic_info["link"])
+        else:
+            metadata["link_homepage"].append(entry_data["episode_link"])
         metadata["link_mp3"].append(entry_data["link"])
         metadata["description"].append(feed_basic_info["description"])
         metadata["published"].append(entry_data["published"])
