@@ -75,7 +75,7 @@ const search = () => {
 };
 
 
-const createResultElement = ({ podcast,episode_title_pretty, episode_title, description, link_homepage, link_mp3, similarity, image,ad, mp, start_time, published}) => {
+const createResultElement = ({ podcast,episode_title_pretty, episode_title, description, link_homepage, link_mp3, similarity, image,ad, mp, start_time, published, keywords}) => {
 
   const magic_time = start_time / 1000
   const isAdd = (ad == 1)
@@ -112,6 +112,8 @@ const createResultElement = ({ podcast,episode_title_pretty, episode_title, desc
   const podcastHeading = document.createElement('h3');
   podcastHeading.textContent = podcast;
 
+  const publishedDate = document.createElement("p");
+  publishedDate.textContent = "Published: " + published
   console.log(isAdd)
   if (isAdd) {
     textDiv.classList.add('ad-background');
@@ -147,10 +149,40 @@ const createResultElement = ({ podcast,episode_title_pretty, episode_title, desc
     similarEpisodes(episode_title)
   })
 
+  favoriteButton.addEventListener("mouseover", () => {
+    starIcon.classList.remove("bi-star")
+    starIcon.classList.add("bi-star-fill")
+  })
+  favoriteButton.addEventListener("mouseout", () => {
+    starIcon.classList.add("bi-star")
+    starIcon.classList.remove("bi-star-fill")
+  })
 
-  const similarityParagraph = document.createElement('p');
-  similarityParagraph.textContent = `Similarity score: ${similarity.toFixed(2)}`;
+  const similarityParagraph = document.createElement('div');
+  similarityParagraph.classList.add("row")
+  similarityParagraph.classList.add("align-items-center")
+  similarityParagraph.classList.add("justify-content-center")
+  similarityParagraph.classList.add("similarityParagraph")
 
+  const similarityBar = document.createElement("div")
+  similarityBar.classList.add("col-6")
+  similarityBar.classList.add("similarityDiv")
+
+  var similarityPercent = 100 * Math.min(similarity, 0.3) / 0.3
+  console.log(similarityPercent)
+  similarityParagraph.style.width =  `${similarityPercent}%`
+
+  const similarityText = document.createElement("p")
+  similarityText.classList.add("col-2")
+  similarityPercent = similarityPercent.toFixed(2)
+  similarityText.textContent = `Ujemanje: ${similarityPercent}%`
+  if (similarityPercent > 0){
+    similarityParagraph.appendChild(similarityBar)
+    similarityParagraph.appendChild(similarityText)
+  }
+  
+  const keywordsParagraph = document.createElement("p")
+  keywordsParagraph.textContent = keywords
 
   
   var audioElement = new Audio(link_mp3);
@@ -323,6 +355,9 @@ const createResultElement = ({ podcast,episode_title_pretty, episode_title, desc
   textDiv.appendChild(podcastHeading);
   textDiv.appendChild(descriptionParagraph);
   textDiv.appendChild(similarityParagraph);
+  textDiv.appendChild(keywordsParagraph)
+  textDiv.appendChild(publishedDate)
+  
 
   columnDiv.appendChild(imageDiv);
   columnDiv.appendChild(textDiv);

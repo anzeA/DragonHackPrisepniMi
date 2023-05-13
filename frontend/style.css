@@ -6,6 +6,16 @@ body {
   background-color: #f2f2f2;
 }
 
+.similarityDiv{
+  background-color: #7797ff;
+  height: 8px;
+  
+}
+
+.similarityParagraph{
+  box-sizing: content-box;
+}
+
 .titleDiv {
   background-color: #bdbdbd;
   font-size: 20px;
