@@ -134,9 +134,7 @@ def rank():
         logging.error(f'Error processing query {query}: {e}')
         return jsonify({'result': 'Error'})
 
-@app.route('/api/newest', methods=['GET'])
-@cross_origin()
-def newest():
+def get_newest():
     global df_metadata
     df = df_metadata.sort_values(by='published', ascending=False)
     df = df.head(10).copy()
@@ -144,6 +142,12 @@ def newest():
     df['similarity'] = 0
     df['image'] = df.podcast_name.apply(lambda x: get_tmp_image(x))
     return jsonify(df.to_dict(orient='records'))
+
+newest = get_newest()
+@app.route('/api/newest', methods=['GET'])
+@cross_origin()
+def newest():
+    return newest
 
 if __name__ == '__main__':
     app.run(port=3001, debug=True)
