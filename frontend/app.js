@@ -22,11 +22,13 @@ const startPage = () => {
 
 const similarEpisodes = (title) => {
   console.log('Start Page');
-  const encodedTitle = encodeURIComponent(title);
-  fetch(`http://localhost:3001/api/similar_episodes?episode_title=${encodedTitle}`, {
+  fetch('http://localhost:3001/api/similar_episodes?' + new URLSearchParams({
+    episode_title: title
+  }),
+  {
     method: 'GET',
     headers: {
-      'Content-Type': 'application/json; charset=utf-8'
+      'Content-Type': 'application/json'
     }
   })
   .then(response => response.json())
@@ -35,14 +37,13 @@ const similarEpisodes = (title) => {
     const resultsContainer = document.getElementById('search-results');
     resultsContainer.innerHTML = '';
     data.forEach(result => {
-      console.log(result);
+      console.log(result)
       const resultDiv = createResultElement(result);
       resultsContainer.appendChild(resultDiv);
     });
   })
   .catch(error => console.error(error));
-};
-
+}
 
 window.addEventListener("load", () => {
   console.log("tukaj")
@@ -81,7 +82,7 @@ const createResultElement = ({ podcast,episode_title_pretty, episode_title, desc
 
   const resultDiv = document.createElement('div');
   resultDiv.classList.add('result');
-  
+
 
   const columnDiv = document.createElement('div')
   columnDiv.classList.add('row')
@@ -102,7 +103,7 @@ const createResultElement = ({ podcast,episode_title_pretty, episode_title, desc
   titleDiv.classList.add("titleDiv")
 
   const progressBarDiv = document.createElement("div")
-  
+
   progressBarDiv.classList.add("col-8")
 
   const titleHeading = document.createElement('h2');
@@ -136,7 +137,7 @@ const createResultElement = ({ podcast,episode_title_pretty, episode_title, desc
   favoriteButton.classList.add("btn")
   favoriteButton.classList.add("col-sm-1")
   favoriteButton.classList.add("titleDiv")
-  
+
   var starIcon = document.createElement("i")
   starIcon.classList.add("bi")
   starIcon.classList.add("bi-star")
@@ -167,6 +168,10 @@ const createResultElement = ({ podcast,episode_title_pretty, episode_title, desc
   similarityBar.classList.add("col-6")
   similarityBar.classList.add("similarityDiv")
 
+  const similarityBarFilled = document.createElement("div")
+  const similarityBarEmpty = document.createElement("div")
+
+
   var similarityPercent = 100 * Math.min(similarity, 0.3) / 0.3
   console.log(similarityPercent)
   similarityParagraph.style.width =  `${similarityPercent}%`
@@ -179,11 +184,35 @@ const createResultElement = ({ podcast,episode_title_pretty, episode_title, desc
     similarityParagraph.appendChild(similarityBar)
     similarityParagraph.appendChild(similarityText)
   }
-  
-  const keywordsParagraph = document.createElement("p")
-  keywordsParagraph.textContent = keywords
 
-  
+  const keywordsDiv = document.createElement("div")
+  keywordsDiv.classList.add("row")
+
+  const keywordsParagraph = document.createElement("p")
+  keywordsParagraph.classList.add("col-1")
+
+  keywordsParagraph.textContent = "Keywords: "
+  keywordsDiv.appendChild(keywordsParagraph)
+
+  var keywordParts = keywords.split(",")
+
+  keywordParts.forEach(elem => {
+    const keywordButton = document.createElement("button")
+    keywordButton.classList.add("invisBtn")
+    keywordButton.classList.add("col-2")
+    keywordButton.textContent = elem
+
+    keywordButton.addEventListener("click", () => {
+      si = document.getElementById("search-input")
+      si.textContent = elem
+      search()
+      si.textContent = elem
+    })
+    keywordsDiv.appendChild(keywordButton)
+  })
+  // keywordsParagraph.textContent = keywords
+
+
   var audioElement = new Audio(link_mp3);
 
   const bottomDiv = document.createElement("div");
@@ -245,7 +274,7 @@ const createResultElement = ({ podcast,episode_title_pretty, episode_title, desc
     else{
       audioElement.currentTime -= 30.0
     }
-    
+
   })
 
   const magicButton = document.createElement("div")
@@ -276,7 +305,7 @@ const createResultElement = ({ podcast,episode_title_pretty, episode_title, desc
   audioElement.addEventListener("timeupdate", () => {
     const progress = (audioElement.currentTime / audioElement.duration) * 100;
     const progressLeft = 100 - progress;
-    
+
     audioLeft.style.width = `${progressLeft}%`;
     listened.style.width = `${progress}%`;
 
@@ -311,7 +340,7 @@ const createResultElement = ({ podcast,episode_title_pretty, episode_title, desc
 
 
     audioText.textContent = `${startString} / ${endString}`
-    
+
   });
 
   progressBar.addEventListener("click", (event) => {
@@ -321,7 +350,7 @@ const createResultElement = ({ podcast,episode_title_pretty, episode_title, desc
     var x = event.clientX
     console.log(x, endX, x / endX)
     x = x - startX
-    
+
     var progress = x / endX
 
     var curTime = audioElement.duration * progress
@@ -354,9 +383,9 @@ const createResultElement = ({ podcast,episode_title_pretty, episode_title, desc
   textDiv.appendChild(podcastHeading);
   textDiv.appendChild(descriptionParagraph);
   textDiv.appendChild(similarityParagraph);
-  textDiv.appendChild(keywordsParagraph)
+  textDiv.appendChild(keywordsDiv)
   textDiv.appendChild(publishedDate)
-  
+
 
   columnDiv.appendChild(imageDiv);
   columnDiv.appendChild(textDiv);
@@ -385,4 +414,3 @@ searchInput.addEventListener('keydown', event => {
     search();
   }
 });
-
