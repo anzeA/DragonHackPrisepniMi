@@ -1,4 +1,4 @@
-# DragonHack2023
+# Prišepni mi
 
 
 Prišepni-mi is a cutting-edge product revolutionizing the podcast discovery process. Our platform harnesses the power of semantic search and vector embeddings to transcribe and analyze podcast content, ensuring that users find the most relevant and engaging material with a simple search query.
