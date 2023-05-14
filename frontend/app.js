@@ -168,13 +168,20 @@ const createResultElement = ({ podcast,episode_title_pretty, episode_title, desc
   similarityBar.classList.add("col-6")
   similarityBar.classList.add("similarityDiv")
 
+  
   const similarityBarFilled = document.createElement("div")
+  similarityBarFilled.classList.add("simBar")
   const similarityBarEmpty = document.createElement("div")
+
+  similarityBar.appendChild(similarityBarFilled)
+  similarityBar.appendChild(similarityBarEmpty)
 
 
   var similarityPercent = 100 * Math.min(similarity, 0.3) / 0.3
+  var disimilarityPercent = 100 - similarityPercent
   console.log(similarityPercent)
-  similarityParagraph.style.width =  `${similarityPercent}%`
+  similarityBarFilled.style.width =  `${similarityPercent}%`
+  similarityBarEmpty.style.width =  `${disimilarityPercent}%`
 
   const similarityText = document.createElement("p")
   similarityText.classList.add("col-2")
