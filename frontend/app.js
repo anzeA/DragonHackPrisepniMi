@@ -176,8 +176,8 @@ const createResultElement = ({ podcast,episode_title_pretty, episode_title, desc
   similarityBar.appendChild(similarityBarFilled)
   similarityBar.appendChild(similarityBarEmpty)
 
-
-  var similarityPercent = 100 * Math.min(similarity, 0.3) / 0.3
+  var similarityThreshold = 0.4
+  var similarityPercent = 100 * Math.min(similarity, similarityThreshold) / similarityThreshold
   var disimilarityPercent = 100 - similarityPercent
   console.log(similarityPercent)
   similarityBarFilled.style.width =  `${similarityPercent}%`
@@ -211,9 +211,9 @@ const createResultElement = ({ podcast,episode_title_pretty, episode_title, desc
 
     keywordButton.addEventListener("click", () => {
       si = document.getElementById("search-input")
-      si.textContent = elem
+      si.value = keywordButton.textContent
       search()
-      si.textContent = elem
+      si.value = keywordButton.textContent
     })
     keywordsDiv.appendChild(keywordButton)
   })
