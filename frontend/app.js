@@ -22,13 +22,11 @@ const startPage = () => {
 
 const similarEpisodes = (title) => {
   console.log('Start Page');
-  fetch('http://localhost:3001/api/similar_episodes?' + new URLSearchParams({
-    episode_title: title
-  }),
-  {
+  const encodedTitle = encodeURIComponent(title);
+  fetch(`http://localhost:3001/api/similar_episodes?episode_title=${encodedTitle}`, {
     method: 'GET',
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json; charset=utf-8'
     }
   })
   .then(response => response.json())
@@ -37,13 +35,14 @@ const similarEpisodes = (title) => {
     const resultsContainer = document.getElementById('search-results');
     resultsContainer.innerHTML = '';
     data.forEach(result => {
-      console.log(result)
+      console.log(result);
       const resultDiv = createResultElement(result);
       resultsContainer.appendChild(resultDiv);
     });
   })
   .catch(error => console.error(error));
-}
+};
+
 
 window.addEventListener("load", () => {
   console.log("tukaj")

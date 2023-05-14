@@ -1,3 +1,5 @@
+import json
+
 from flask import Flask, request, jsonify
 from flask_cors import CORS,cross_origin
 import numpy as np
@@ -8,16 +10,18 @@ import base64
 import io
 from sentence_transformers import SentenceTransformer
 from functools import lru_cache
-from PIL import Image    
+from PIL import Image
+'''
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
         logging.FileHandler("debug.log"),
         logging.StreamHandler()
-    ]
+    ],
+    encoding='utf-8'
 )
-
+'''
 app = Flask(__name__)
 cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 BASEDIR = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),'..'))
@@ -204,22 +208,30 @@ def newest():
 @app.route('/api/similar_episodes', methods=['GET'])
 @cross_origin()
 def similar_episodes():
-    episode_title = request.json.get('episode_title', '')
+
+    episode_title = request.args.get('episode_title', '')
+
     df_transcribe =  df_transcribe_dim_cols
+
     global df_metadata
+
     df_pod = df_transcribe.groupby("episode_title").agg({f"emb_{i}": "median" for i in range(384)}).reset_index()
+
+
     df_pod["embedding"] = df_pod.apply(lambda s: np.array([s[f"emb_{i}"] for i in range(384)]), axis=1)
 
     embedding = df_pod[df_pod.episode_title==episode_title][[f"emb_{i}" for i in range(384)]].values.squeeze()
+
     df_res = get_similar_news(embedding, df_pod, embedding_col="embedding")
 
     df_res = df_res[["episode_title", "similarity"]].merge(df_metadata, how='left', on='episode_title').sort_values(by=["similarity"], ascending=False)
 
     out = df_res[1:11].copy()
-    out.drop(columns=['embedding'], inplace=True)
+    #out.drop(columns=['embedding'], inplace=True)
     print(out.columns)
     out['image'] = out.podcast_name.apply(lambda x: get_tmp_image(x))
     out['ad'] = 0
+    print(out.columns)
     return jsonify(out.to_dict(orient='records'))
 
 
