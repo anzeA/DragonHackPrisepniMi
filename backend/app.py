@@ -208,15 +208,10 @@ def newest():
 @app.route('/api/similar_episodes', methods=['GET'])
 @cross_origin()
 def similar_episodes():
-
     episode_title = request.args.get('episode_title', '')
-
     df_transcribe =  df_transcribe_dim_cols
-
     global df_metadata
-
     df_pod = df_transcribe.groupby("episode_title").agg({f"emb_{i}": "median" for i in range(384)}).reset_index()
-
 
     df_pod["embedding"] = df_pod.apply(lambda s: np.array([s[f"emb_{i}"] for i in range(384)]), axis=1)
 
