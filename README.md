@@ -17,4 +17,28 @@ In short, Prišepni-mi is the ultimate win-win for podcast enthusiasts and creat
 
 To run the website simply run the ./backend/app.py and open index.html in the browser.
 
+## Environment setup
+
+1. Clone the git repository
+``
+git clone https://github.com/anzeA/DragonHackPrisepniMi.git
+cd DragonHackPrisepniMi
+``
+2. Create conda environments
+``
+conda env create -n dragonhack2023
+conda activate dragonhack2023
+pip install -r requirements
+``
+3. Start backend server
+``
+cd backend
+python app.py
+``
+4. Wait so backend sets up (a few minutes) and the open the html file
+``
+cd <PATH_TO_GIT_REPO>/DragonHackPrisepniMi/frontend
+start index.html
+``
+5. Enjoy using the website
 
