@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* 
+header with a logo image on the left. Next to it I will have a title and that is it. 
+Also add sexy font and make it bold 
+*/  
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid lightgray;
+  background-color: #FB7964;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+}
+
+.header > img {
+  object-fit: contain;
+  height: 80px;
+  margin-right: 20px;
+}
+.header > h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+/*
+Creat main component css. I have a search bar  with tag input with a button next to it and a results section. 
+Make button and input have the same height
+*/
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+}

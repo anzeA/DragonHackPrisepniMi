@@ -232,7 +232,7 @@ def download_feed(feed_url):
         df_episode['episode_title'] = ''.join(x for x in entry_data['title'] if x.isalnum())
 
         metadata = {"episode_title_pretty": [], "episode_title": [], "podcast_name": [], "link_homepage": [],
-                    "link_mp3": [], "description": [], "published": []}
+                    "link_mp3": [], "description": [], "published": [],'image_link':[]}
 
         metadata["episode_title_pretty"].append(entry_data["title_pretty"])
         metadata["episode_title"].append(entry_data["title"])
@@ -244,6 +244,7 @@ def download_feed(feed_url):
         metadata["link_mp3"].append(entry_data["link"])
         metadata["description"].append(feed_basic_info["description"])
         metadata["published"].append(entry_data["published"])
+        metadata["image_link"].append(feed_basic_info["image_link"])
 
         df_meta_new = pd.DataFrame(metadata)
 
